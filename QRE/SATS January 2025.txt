@@ -1,0 +1,2950 @@
+<survey xmlns:builder="http://decipherinc.com/builder" xmlns:html="http://decipherinc.com/html" xmlns:ss="http://decipherinc.com/ss" alt="SATS SURVEY JANUARY 2025" autosave="0" builder:wizardCompleted="1" builderCompatible="1" compat="153" delphi="1" extraVariables="source,record,decLang,list,userAgent" fir="on" html:showNumber="0" mobile="compat" mobileDevices="smartphone,tablet,desktop" name="Survey" remerged="20250119_17:32" secure="1" setup="term,decLang,quota,time" ss:disableBackButton="1" ss:enableNavigation="1" ss:hideProgressBar="0" state='closed' theme="frozen:system/contemporary" version="120">
+  <condition cond="(Q435.r1 or Q435.r2 or Q435.r3 or Q435.r4)" label="UNIQUE">UNIQUE</condition>
+  <condition cond="hasMarker('Los_Cabos_Mexico')" label="marker__Los_Cabos_Mexico">Los_Cabos_Mexico</condition>
+  <condition cond="hasMarker('Cancun_Mexico')" label="marker__Cancun_Mexico">Cancun_Mexico</condition>
+  <condition cond="hasMarker('Mexico_City_Mexico')" label="marker__Mexico_City_Mexico">Mexico_City_Mexico</condition>
+  <condition cond="hasMarker('Vancouver_British_Columbia')" label="marker__Vancouver_British_Columbia">Vancouver_British_Columbia</condition>
+  <condition cond="hasMarker('Montreal_Quebec')" label="marker__Montreal_Quebec">Montreal_Quebec</condition>
+  <condition cond="hasMarker('Toronto_Ontario')" label="marker__Toronto_Ontario">Toronto_Ontario</condition>
+  <condition cond="hasMarker('Oklahoma_City')" label="marker__Oklahoma_City">Oklahoma_City</condition>
+  <condition cond="hasMarker('St_Louis_MO')" label="marker__St_Louis_MO">St_Louis_MO</condition>
+  <condition cond="hasMarker('Cincinnati_OH')" label="marker__Cincinnati_OH">Cincinnati_OH</condition>
+  <condition cond="(Q420.r1)" label="SAN_ANTONIO_CONV_TRIP">SAN ANTONIO CONV TRIP</condition>
+  <condition cond="hasMarker('Rapid_City_Black_Hills_area_South_Dakota')" label="marker__Rapid_City_Black_Hills_area_South_Dakota">Rapid_City_Black_Hills_area_South_Dakota</condition>
+  <condition cond="hasMarker('Bozeman_Montana')" label="marker__Bozeman_Montana">Bozeman_Montana</condition>
+  <condition cond="hasMarker('Billings_Montana')" label="marker__Billings_Montana">Billings_Montana</condition>
+  <condition label="marker__Cozumel_Mexico" cond="hasMarker('Cozumel_Mexico')">Cozumel_Mexico</condition>
+  <condition label="marker__The_Maldives" cond="hasMarker('The_Maldives')">The_Maldives</condition>
+  <condition label="marker__The_Seychelles_Islands" cond="hasMarker('The_Seychelles_Islands')">The_Seychelles_Islands</condition>
+  <condition label="marker__Tahiti_French_Polynesia" cond="hasMarker('Tahiti_French_Polynesia')">Tahiti_French_Polynesia</condition>
+  <condition label="marker__Bali_Indonesia" cond="hasMarker('Bali_Indonesia')">Bali_Indonesia</condition>
+  <condition label="marker__Republic_of_Fiji" cond="hasMarker('Republic_of_Fiji')">Republic_of_Fiji</condition>
+  <condition label="EMPLOYED_2" cond="(Q5.r1 or Q5.r2)">EMPLOYED 2</condition>
+  <condition label="marker__Charlotte__NC" cond="hasMarker('Charlotte__NC')">Charlotte__NC</condition>
+  <condition label="marker__Nassau_County__Long_Island__NY" cond="hasMarker('Nassau_County__Long_Island__NY')">Nassau_County__Long_Island__NY</condition>
+  <condition label="EMPLOYED" cond="(Q5.r1 or Q5.r2 or Q5.r3)">EMPLOYED</condition>
+  <condition label="GROUP_MEETING__0" cond="(Q12.r2 or Q12.r3 or Q12.r4)">GROUP MEETING &gt;0</condition>
+  <condition label="Origin_Region_Northeast" cond="(q3.ch7 or q3.ch20 or q3.ch22 or q3.ch30 or q3.ch31 or q3.ch33 or q3.ch39 or q3.ch40 or q3.ch46)">Origin Region Northeast</condition>
+  <condition label="Origin_Region_South" cond="(q3.ch1 or q3.ch4 or q3.ch8 or q3.ch9 or q3.ch10 or q3.ch11 or q3.ch18 or q3.ch19 or q3.ch21 or q3.ch25 or q3.ch34 or q3.ch37 or q3.ch41 or q3.ch43 or q3.ch44 or q3.ch47 or q3.ch49)">Origin Region South</condition>
+  <condition label="Origin_Region_Midwest" cond="(q3.ch14 or q3.ch15 or q3.ch16 or q3.ch17 or q3.ch23 or q3.ch24 or q3.ch26 or q3.ch28 or q3.ch35 or q3.ch36 or q3.ch42 or q3.ch50)">Origin Region Midwest</condition>
+  <condition label="Origin_Region_West" cond="(q3.ch2 or q3.ch3 or q3.ch5 or q3.ch6 or q3.ch12 or q3.ch13 or q3.ch27 or q3.ch29 or q3.ch32 or q3.ch38 or q3.ch45 or q3.ch48 or q3.ch51)">Origin Region West</condition>
+  <condition label="marker__Wyoming" cond="hasMarker('Wyoming')">Wyoming</condition>
+  <condition label="marker__Wisconsin" cond="hasMarker('Wisconsin')">Wisconsin</condition>
+  <condition label="marker__West_Virginia" cond="hasMarker('West_Virginia')">West_Virginia</condition>
+  <condition label="marker__Washington" cond="hasMarker('Washington')">Washington</condition>
+  <condition label="marker__Virginia" cond="hasMarker('Virginia')">Virginia</condition>
+  <condition label="marker__Vermont" cond="hasMarker('Vermont')">Vermont</condition>
+  <condition label="marker__Utah" cond="hasMarker('Utah')">Utah</condition>
+  <condition label="marker__Texas" cond="hasMarker('Texas')">Texas</condition>
+  <condition label="marker__Tennessee" cond="hasMarker('Tennessee')">Tennessee</condition>
+  <condition label="marker__South_Dakota" cond="hasMarker('South_Dakota')">South_Dakota</condition>
+  <condition label="marker__South_Carolina" cond="hasMarker('South_Carolina')">South_Carolina</condition>
+  <condition label="marker__Rhode_Island" cond="hasMarker('Rhode_Island')">Rhode_Island</condition>
+  <condition label="marker__Pennsylvania" cond="hasMarker('Pennsylvania')">Pennsylvania</condition>
+  <condition label="marker__Oregon" cond="hasMarker('Oregon')">Oregon</condition>
+  <condition label="marker__Oklahoma" cond="hasMarker('Oklahoma')">Oklahoma</condition>
+  <condition label="marker__Ohio" cond="hasMarker('Ohio')">Ohio</condition>
+  <condition label="marker__North_Dakota" cond="hasMarker('North_Dakota')">North_Dakota</condition>
+  <condition label="marker__North_Carolina" cond="hasMarker('North_Carolina')">North_Carolina</condition>
+  <condition label="marker__New_York" cond="hasMarker('New_York')">New_York</condition>
+  <condition label="marker__New_Mexico" cond="hasMarker('New_Mexico')">New_Mexico</condition>
+  <condition label="marker__New_Jersey" cond="hasMarker('New_Jersey')">New_Jersey</condition>
+  <condition label="marker__New_Hampshire" cond="hasMarker('New_Hampshire')">New_Hampshire</condition>
+  <condition label="marker__Nevada" cond="hasMarker('Nevada')">Nevada</condition>
+  <condition label="marker__Nebraska" cond="hasMarker('Nebraska')">Nebraska</condition>
+  <condition label="marker__Montana" cond="hasMarker('Montana')">Montana</condition>
+  <condition label="marker__Missouri" cond="hasMarker('Missouri')">Missouri</condition>
+  <condition label="marker__Mississippi" cond="hasMarker('Mississippi')">Mississippi</condition>
+  <condition label="marker__Minnesota" cond="hasMarker('Minnesota')">Minnesota</condition>
+  <condition label="marker__Michigan" cond="hasMarker('Michigan')">Michigan</condition>
+  <condition label="marker__Massachusetts" cond="hasMarker('Massachusetts')">Massachusetts</condition>
+  <condition label="marker__Maryland" cond="hasMarker('Maryland')">Maryland</condition>
+  <condition label="marker__Maine" cond="hasMarker('Maine')">Maine</condition>
+  <condition label="marker__Louisiana" cond="hasMarker('Louisiana')">Louisiana</condition>
+  <condition label="marker__Kentucky" cond="hasMarker('Kentucky')">Kentucky</condition>
+  <condition label="marker__Kansas" cond="hasMarker('Kansas')">Kansas</condition>
+  <condition label="marker__Iowa" cond="hasMarker('Iowa')">Iowa</condition>
+  <condition label="marker__Indiana" cond="hasMarker('Indiana')">Indiana</condition>
+  <condition label="marker__Illinois" cond="hasMarker('Illinois')">Illinois</condition>
+  <condition label="marker__Idaho" cond="hasMarker('Idaho')">Idaho</condition>
+  <condition label="marker__Hawaii" cond="hasMarker('Hawaii')">Hawaii</condition>
+  <condition label="marker__Georgia" cond="hasMarker('Georgia')">Georgia</condition>
+  <condition label="marker__Florida" cond="hasMarker('Florida')">Florida</condition>
+  <condition label="marker__Delaware" cond="hasMarker('Delaware')">Delaware</condition>
+  <condition label="marker__Connecticut" cond="hasMarker('Connecticut')">Connecticut</condition>
+  <condition label="marker__Colorado" cond="hasMarker('Colorado')">Colorado</condition>
+  <condition label="marker__California" cond="hasMarker('California')">California</condition>
+  <condition label="marker__Arkansas" cond="hasMarker('Arkansas')">Arkansas</condition>
+  <condition label="marker__Arizona" cond="hasMarker('Arizona')">Arizona</condition>
+  <condition label="marker__Alaska" cond="hasMarker('Alaska')">Alaska</condition>
+  <condition label="marker__Alabama" cond="hasMarker('Alabama')">Alabama</condition>
+  <condition label="marker__the_Cayman_Islands" cond="hasMarker('the_Cayman_Islands')">the_Cayman_Islands</condition>
+  <condition label="marker__Bermuda" cond="hasMarker('Bermuda')">Bermuda</condition>
+  <condition label="marker__the_Bahamas" cond="hasMarker('the_Bahamas')">the_Bahamas</condition>
+  <condition label="marker__the_Dominican_Republic" cond="hasMarker('the_Dominican_Republic')">the_Dominican_Republic</condition>
+  <condition label="marker__Aruba" cond="hasMarker('Aruba')">Aruba</condition>
+  <condition label="marker__Jamaica" cond="hasMarker('Jamaica')">Jamaica</condition>
+  <condition label="marker__Cuba" cond="hasMarker('Cuba')">Cuba</condition>
+  <condition label="marker__the_Florida_Keys" cond="hasMarker('the_Florida_Keys')">the_Florida_Keys</condition>
+  <condition label="marker__the_British_Virgin_Islands" cond="hasMarker('the_British_Virgin_Islands')">the_British_Virgin_Islands</condition>
+  <condition label="marker__The_U_S__Virgin_Islands" cond="hasMarker('The_U_S__Virgin_Islands')">The_U_S__Virgin_Islands</condition>
+  <condition label="marker__Puerto_Rico" cond="hasMarker('Puerto_Rico')">Puerto_Rico</condition>
+  <condition label="marker__Washington_DC" cond="hasMarker('Washington_DC')">Washington_DC</condition>
+  <condition label="marker__Seattle__Washington" cond="hasMarker('Seattle__Washington')">Seattle__Washington</condition>
+  <condition label="marker__Santa_Barbara__California" cond="hasMarker('Santa_Barbara__California')">Santa_Barbara__California</condition>
+  <condition label="marker__San_Francisco__California" cond="hasMarker('San_Francisco__California')">San_Francisco__California</condition>
+  <condition label="marker__San_Diego__California" cond="hasMarker('San_Diego__California')">San_Diego__California</condition>
+  <condition label="marker__San_Antonio__Texas" cond="hasMarker('San_Antonio__Texas')">San_Antonio__Texas</condition>
+  <condition label="marker__Reno_Lake_Tahoe_area" cond="hasMarker('Reno_Lake_Tahoe_area')">Reno_Lake_Tahoe_area</condition>
+  <condition label="marker__Portland__Oregon" cond="hasMarker('Portland__Oregon')">Portland__Oregon</condition>
+  <condition label="marker__Pittsburgh__Pennsylvania" cond="hasMarker('Pittsburgh__Pennsylvania')">Pittsburgh__Pennsylvania</condition>
+  <condition label="marker__Phoenix__Arizona" cond="hasMarker('Phoenix__Arizona')">Phoenix__Arizona</condition>
+  <condition label="marker__Philadelphia__Pennsylvania" cond="hasMarker('Philadelphia__Pennsylvania')">Philadelphia__Pennsylvania</condition>
+  <condition label="marker__Orlando__Florida" cond="hasMarker('Orlando__Florida')">Orlando__Florida</condition>
+  <condition label="marker__New_York_City" cond="hasMarker('New_York_City')">New_York_City</condition>
+  <condition label="marker__New_Orleans__Louisiana" cond="hasMarker('New_Orleans__Louisiana')">New_Orleans__Louisiana</condition>
+  <condition label="marker__Nashville__Tennessee" cond="hasMarker('Nashville__Tennessee')">Nashville__Tennessee</condition>
+  <condition label="marker__Minneapolis__Minnesota" cond="hasMarker('Minneapolis__Minnesota')">Minneapolis__Minnesota</condition>
+  <condition label="marker__Miami__Florida" cond="hasMarker('Miami__Florida')">Miami__Florida</condition>
+  <condition label="marker__Memphis__Tennessee" cond="hasMarker('Memphis__Tennessee')">Memphis__Tennessee</condition>
+  <condition label="marker__Louisville__Kentucky" cond="hasMarker('Louisville__Kentucky')">Louisville__Kentucky</condition>
+  <condition label="marker__Los_Angeles__California" cond="hasMarker('Los_Angeles__California')">Los_Angeles__California</condition>
+  <condition label="marker__Las_Vegas__Nevada" cond="hasMarker('Las_Vegas__Nevada')">Las_Vegas__Nevada</condition>
+  <condition label="marker__Houston__Texas" cond="hasMarker('Houston__Texas')">Houston__Texas</condition>
+  <condition label="marker__Fort_Worth__Texas" cond="hasMarker('Fort_Worth__Texas')">Fort_Worth__Texas</condition>
+  <condition label="marker__Detroit__Michigan" cond="hasMarker('Detroit__Michigan')">Detroit__Michigan</condition>
+  <condition label="marker__Denver__Colorado" cond="hasMarker('Denver__Colorado')">Denver__Colorado</condition>
+  <condition label="marker__Dallas__Texas" cond="hasMarker('Dallas__Texas')">Dallas__Texas</condition>
+  <condition label="marker__Columbus__Ohio" cond="hasMarker('Columbus__Ohio')">Columbus__Ohio</condition>
+  <condition label="marker__Cleveland__Ohio" cond="hasMarker('Cleveland__Ohio')">Cleveland__Ohio</condition>
+  <condition label="marker__Clearwater___St__Petersburg__Florida" cond="hasMarker('Clearwater___St__Petersburg__Florida')">Clearwater___St__Petersburg__Florida</condition>
+  <condition label="marker__Chicago__Illinois" cond="hasMarker('Chicago__Illinois')">Chicago__Illinois</condition>
+  <condition label="marker__Buffalo_Niagara_area__NY" cond="hasMarker('Buffalo_Niagara_area__NY')">Buffalo_Niagara_area__NY</condition>
+  <condition label="marker__Boston__Massachusetts" cond="hasMarker('Boston__Massachusetts')">Boston__Massachusetts</condition>
+  <condition label="marker__Baltimore__Maryland" cond="hasMarker('Baltimore__Maryland')">Baltimore__Maryland</condition>
+  <condition label="marker__Austin__Texas" cond="hasMarker('Austin__Texas')">Austin__Texas</condition>
+  <condition label="marker__Atlantic_City__New_Jersey" cond="hasMarker('Atlantic_City__New_Jersey')">Atlantic_City__New_Jersey</condition>
+  <condition label="marker__Atlanta__Georgia" cond="hasMarker('Atlanta__Georgia')">Atlanta__Georgia</condition>
+  <condition label="marker__Anchorage__Alaska" cond="hasMarker('Anchorage__Alaska')">Anchorage__Alaska</condition>
+  <condition label="marker__Anaheim___Orange_County__California" cond="hasMarker('Anaheim___Orange_County__California')">Anaheim___Orange_County__California</condition>
+  <condition label="NON_RURAL" cond="(Q4.r1 or Q4.r2)">NON RURAL</condition>
+  <condition label="Parent" cond="(Q6.r1)">Parent</condition>
+  <condition label="Disability_2" cond="(Q8.r1 or Q8.r2 or Q8.r3 or Q8.r4 or Q8.r5 or Q8.r6)">Disability 2</condition>
+  <condition label="daytrip_branch" cond="not(Q68.r1.ch1) or not(Q68.r2.ch1) or not(Q68.r3.ch1) or not(Q68.r4.ch1) or not(Q68.r5.ch1)">daytrip branch</condition>
+  <condition label="overnight_branch" cond="not(Q67.r1.ch1) or not(Q67.r2.ch1) or not(Q67.r3.ch1) or not(Q67.r4.ch1) or not(Q67.r5.ch1)">overnight branch</condition>
+  <samplesources default="101">
+    <samplesource list="1">
+      <title>Test</title>
+      <invalid>You are missing information in the URL. Please verify the URL with the original invite.</invalid>
+      <completed>It seems you have already entered this survey.</completed>
+      <exit cond="terminated">Thank you for taking our survey.</exit>
+      <exit cond="overquota">Thank you for taking our survey.</exit>
+      <exit cond="qualified">Thank you for taking our survey.</exit>
+    </samplesource>
+    <samplesource keyring="sys/dynata" list="101" sign="out,in">
+      <title>Dynata</title>
+      <invalid>You are missing information in the URL. Please verify the URL with the original invite.</invalid>
+      <completed>It seems you have already entered this survey.</completed>
+      <var name="psid" unique="1"/>
+      <exit cond="terminated" url="https://dkr1.ssisurveys.com/projects/end?rst=2&amp;psid=${psid}&amp;_d=${gv.survey.path}"/>
+      <exit cond="overquota" url="https://dkr1.ssisurveys.com/projects/end?rst=3&amp;psid=${psid}&amp;_d=${gv.survey.path}"/>
+      <exit cond="qualified" url="https://dkr1.ssisurveys.com/projects/end?rst=1&amp;psid=${psid}&amp;_d=${gv.survey.path}"/>
+    </samplesource>
+  </samplesources>
+  <suspend/>
+  <logic label="ln1" uses="recaptcha.1">
+    <title>New Recaptcha</title>
+  </logic>
+  <html label="ln1_h" cond="ln1.human" where="survey">Please continue</html>
+  <html label="ln1_nh" cond="not ln1.human" final="1" where="survey">You cannot proceed further.</html>
+  <radio label="ln1_results" where="execute,survey,report">
+    <title>Results</title>
+    <comment>Select one</comment>
+    <exec>
+ln1_results.val = int(not ln1.human)
+  </exec>
+    <row label="r1">Human</row>
+    <row label="r2">Not Human</row>
+  </radio>
+  <radio label="q1">
+    <title>&lt;strong&gt;What is your gender? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Male</row>
+    <row label="r2">Female</row>
+    <row label="r3">Other</row>
+    <row label="r4">I prefer not to answer</row>
+  </radio>
+  <select label="q2" libraryElementID="jHe5qESE">
+    <title>&lt;strong&gt;In what year were you born? (Select one)&lt;/strong&gt;</title>
+    <choice label="ch1">After 2007</choice>
+    <choice label="ch109">2007</choice>
+    <choice label="ch108">2006</choice>
+    <choice label="ch107">2005</choice>
+    <choice label="ch2">2004</choice>
+    <choice label="ch3">2003</choice>
+    <choice label="ch4">2002</choice>
+    <choice label="ch5">2001</choice>
+    <choice label="ch6">2000</choice>
+    <choice label="ch7">1999</choice>
+    <choice label="ch8">1998</choice>
+    <choice label="ch9">1997</choice>
+    <choice label="ch10">1996</choice>
+    <choice label="ch11">1995</choice>
+    <choice label="ch12">1994</choice>
+    <choice label="ch13">1993</choice>
+    <choice label="ch14">1992</choice>
+    <choice label="ch15">1991</choice>
+    <choice label="ch16">1990</choice>
+    <choice label="ch17">1989</choice>
+    <choice label="ch18">1988</choice>
+    <choice label="ch19">1987</choice>
+    <choice label="ch20">1986</choice>
+    <choice label="ch21">1985</choice>
+    <choice label="ch22">1984</choice>
+    <choice label="ch23">1983</choice>
+    <choice label="ch24">1982</choice>
+    <choice label="ch25">1981</choice>
+    <choice label="ch26">1980</choice>
+    <choice label="ch27">1979</choice>
+    <choice label="ch28">1978</choice>
+    <choice label="ch29">1977</choice>
+    <choice label="ch30">1976</choice>
+    <choice label="ch31">1975</choice>
+    <choice label="ch32">1974</choice>
+    <choice label="ch33">1973</choice>
+    <choice label="ch34">1972</choice>
+    <choice label="ch35">1971</choice>
+    <choice label="ch36">1970</choice>
+    <choice label="ch37">1969</choice>
+    <choice label="ch38">1968</choice>
+    <choice label="ch39">1967</choice>
+    <choice label="ch40">1966</choice>
+    <choice label="ch41">1965</choice>
+    <choice label="ch42">1964</choice>
+    <choice label="ch43">1963</choice>
+    <choice label="ch44">1962</choice>
+    <choice label="ch45">1961</choice>
+    <choice label="ch46">1960</choice>
+    <choice label="ch47">1959</choice>
+    <choice label="ch48">1958</choice>
+    <choice label="ch49">1957</choice>
+    <choice label="ch50">1956</choice>
+    <choice label="ch51">1955</choice>
+    <choice label="ch52">1954</choice>
+    <choice label="ch53">1953</choice>
+    <choice label="ch54">1952</choice>
+    <choice label="ch55">1951</choice>
+    <choice label="ch56">1950</choice>
+    <choice label="ch57">1949</choice>
+    <choice label="ch58">1948</choice>
+    <choice label="ch59">1947</choice>
+    <choice label="ch60">1946</choice>
+    <choice label="ch61">1945</choice>
+    <choice label="ch62">1944</choice>
+    <choice label="ch63">1943</choice>
+    <choice label="ch64">1942</choice>
+    <choice label="ch65">1941</choice>
+    <choice label="ch66">1940</choice>
+    <choice label="ch67">1939</choice>
+    <choice label="ch68">1938</choice>
+    <choice label="ch69">1937</choice>
+    <choice label="ch70">1936</choice>
+    <choice label="ch71">1935</choice>
+    <choice label="ch72">1934</choice>
+    <choice label="ch73">1933</choice>
+    <choice label="ch74">1932</choice>
+    <choice label="ch75">1931</choice>
+    <choice label="ch76">1930</choice>
+    <choice label="ch77">1929</choice>
+    <choice label="ch78">1928</choice>
+    <choice label="ch79">1927</choice>
+    <choice label="ch80">1926</choice>
+    <choice label="ch81">1925</choice>
+    <choice label="ch82">1924</choice>
+    <choice label="ch83">1923</choice>
+    <choice label="ch84">1922</choice>
+    <choice label="ch85">1921</choice>
+    <choice label="ch86">1920</choice>
+    <choice label="ch87">1919</choice>
+    <choice label="ch88">1918</choice>
+    <choice label="ch89">1917</choice>
+    <choice label="ch90">1916</choice>
+    <choice label="ch91">1915</choice>
+    <choice label="ch92">1914</choice>
+    <choice label="ch93">1913</choice>
+    <choice label="ch94">1912</choice>
+    <choice label="ch95">1911</choice>
+    <choice label="ch96">1910</choice>
+    <choice label="ch97">1909</choice>
+    <choice label="ch98">1908</choice>
+    <choice label="ch99">1907</choice>
+    <choice label="ch100">1906</choice>
+    <choice label="ch101">1905</choice>
+    <choice label="ch102">1904</choice>
+    <choice label="ch103">1903</choice>
+    <choice label="ch104">1902</choice>
+    <choice label="ch105">1901</choice>
+    <choice label="ch106">1900</choice>
+  </select>
+  <select label="q3" libraryElementID="rDMjMDJp">
+    <title>&lt;strong&gt;In which state do you currently live? (Select one)&lt;/strong&gt;</title>
+    <choice label="ch1">Alabama</choice>
+    <choice label="ch2">Alaska</choice>
+    <choice label="ch3">Arizona</choice>
+    <choice label="ch4">Arkansas</choice>
+    <choice label="ch5">California</choice>
+    <choice label="ch6">Colorado</choice>
+    <choice label="ch7">Connecticut</choice>
+    <choice label="ch8">Delaware</choice>
+    <choice label="ch9">District of Columbia</choice>
+    <choice label="ch10">Florida</choice>
+    <choice label="ch11">Georgia</choice>
+    <choice label="ch12">Hawaii</choice>
+    <choice label="ch13">Idaho</choice>
+    <choice label="ch14">Illinois</choice>
+    <choice label="ch15">Indiana</choice>
+    <choice label="ch16">Iowa</choice>
+    <choice label="ch17">Kansas</choice>
+    <choice label="ch18">Kentucky</choice>
+    <choice label="ch19">Louisiana</choice>
+    <choice label="ch20">Maine</choice>
+    <choice label="ch21">Maryland</choice>
+    <choice label="ch22">Massachusetts</choice>
+    <choice label="ch23">Michigan</choice>
+    <choice label="ch24">Minnesota</choice>
+    <choice label="ch25">Mississippi</choice>
+    <choice label="ch26">Missouri</choice>
+    <choice label="ch27">Montana</choice>
+    <choice label="ch28">Nebraska</choice>
+    <choice label="ch29">Nevada</choice>
+    <choice label="ch30">New Hampshire</choice>
+    <choice label="ch31">New Jersey</choice>
+    <choice label="ch32">New Mexico</choice>
+    <choice label="ch33">New York</choice>
+    <choice label="ch34">North Carolina</choice>
+    <choice label="ch35">North Dakota</choice>
+    <choice label="ch36">Ohio</choice>
+    <choice label="ch37">Oklahoma</choice>
+    <choice label="ch38">Oregon</choice>
+    <choice label="ch39">Pennsylvania</choice>
+    <choice label="ch40">Rhode Island</choice>
+    <choice label="ch41">South Carolina</choice>
+    <choice label="ch42">South Dakota</choice>
+    <choice label="ch43">Tennessee</choice>
+    <choice label="ch44">Texas</choice>
+    <choice label="ch45">Utah</choice>
+    <choice label="ch46">Vermont</choice>
+    <choice label="ch47">Virginia</choice>
+    <choice label="ch48">Washington</choice>
+    <choice label="ch49">West Virginia</choice>
+    <choice label="ch50">Wisconsin</choice>
+    <choice label="ch51">Wyoming</choice>
+  </select>
+  <text label="Q1" libraryElementID="iqOt0pU2" size="25">
+    <title>&lt;strong&gt;What is your zip code?&lt;/strong&gt;</title>
+    <row label="r1" size="5" verify="zipcode">ZIP Code</row>
+  </text>
+  <radio label="Q2">
+    <title>&lt;strong&gt;Which best describes the &lt;u&gt;combined&lt;/u&gt; annual income of all members of your household? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Less than $29,999</row>
+    <row label="r2">$30,000 to $49,999</row>
+    <row label="r3">$50,000 to $79,999</row>
+    <row label="r4">$80,000 to $99,999</row>
+    <row label="r5">$100,000 to $124,999</row>
+    <row label="r6">$125,000 to $149,999</row>
+    <row label="r7">$150,000 to $199,999</row>
+    <row label="r8">$200,000 to $299,999</row>
+    <row label="r9">$300,000 to $399,999</row>
+    <row label="r10">$400,000 to $499,999</row>
+    <row label="r11">$500,000 or more</row>
+    <row label="r12">I prefer not to answer</row>
+  </radio>
+  <radio label="Q4" libraryElementID="sUVN40Ds">
+    <title>&lt;strong&gt;Which best describes where you live? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Large city (urban area)</row>
+    <row label="r2">Suburban area</row>
+    <row label="r4">Small town (not near an urban area)</row>
+    <row label="r3">Rural area</row>
+  </radio>
+  <radio label="Q5" libraryElementID="etCiu7eG">
+    <title>&lt;strong&gt;Which best describes your current employment status? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Employed (full-time)</row>
+    <row label="r2">Employed (part-time)</row>
+    <row label="r3">Self-employed</row>
+    <row label="r4">Not currently employed</row>
+    <row label="r5">Retired</row>
+    <row label="r6">I prefer not to answer</row>
+  </radio>
+  <suspend/>
+  <radio label="Q6" libraryElementID="kWLDwEEb">
+    <title>&lt;strong&gt;Are you a parent to &lt;u&gt;school-aged children&lt;/u&gt; who travel with you at least once a year? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <radio label="Q7" libraryElementID="cOeaoVos">
+    <title>&lt;strong&gt;Because of a &lt;u&gt;physical, mental or emotional issue&lt;/u&gt; do you (or anyone you regularly travel with) have difficulties or face challenges traveling? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I prefer not to answer</row>
+  </radio>
+  <term label="te1" cond="(q1.r4) or (q1.r2) or (q2.ch1) or (Q2.r9) or (Q5.r4) or (Q5.r5) or (Q5.r6) or (q2.ch1) or (q2.ch45) or (q2.ch46) or (q2.ch47) or (q2.ch48) or (q2.ch49) or (q2.ch50) or (q2.ch51) or (q2.ch52) or (q2.ch53) or (q2.ch54) or (q2.ch55) or (q2.ch56) or (q2.ch57) or (q2.ch58) or (q2.ch59) or (q2.ch60) or (q2.ch61) or (q2.ch62) or (q2.ch63) or (q2.ch65) ">END</term>
+  <suspend/>
+  <quota label="quo3" overquota="noqual" sheet="Quota by US Census Region"/>
+  <quota sheet="Unemployed and Retired" label="quo4"/>
+  <checkbox label="Q8" cond="(Q7.r1)" atleast="1" libraryElementID="OjvFz4HU">
+    <title>&lt;strong&gt;Which best describe the issues that cause you (or anyone you regularly travel with) to have difficulties or challenges while traveling? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Mobility and physical impairments</row>
+    <row label="r2">Vision issues</row>
+    <row label="r3">Hearing issues</row>
+    <row label="r4">Cognitive or learning issues</row>
+    <row label="r5">Psychological issues</row>
+    <row label="r6">Invisible disabilities</row>
+    <row label="r7" exclusive="1">NONE OF THESE</row>
+    <row label="r8" exclusive="1">I PREFER NOT TO ANSWER</row>
+  </checkbox>
+  <suspend/>
+  <html label="cm1" where="survey">&lt;strong&gt;IMPORTANT DEFINITION: &lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;For this survey, please consider the term &#8220;trip&#8221; to be travel to a place &lt;u&gt;AT LEAST 50 MILES OR MORE AWAY FROM YOUR HOME&lt;/u&gt; (i.e., your primary place of residence). Trips can be day trips (no overnight stay) or longer, overnight trips.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;In the &lt;u&gt;PAST YEAR (12 MONTHS)&lt;/u&gt;, how many trips have you taken for each of the following reasons?&lt;/strong&gt;</html>
+  <radio label="Q9">
+    <title>&lt;strong&gt;Leisure travel (Vacations, getaway weekends, etc.) (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero</row>
+    <row label="r2">1-4 trips</row>
+    <row label="r3">5-9 trips</row>
+    <row label="r4">10 or more trips</row>
+  </radio>
+  <radio label="Q10">
+    <title>&lt;strong&gt;Visiting friends and relatives (travel specifically for this reason) (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero</row>
+    <row label="r2">1-4 trips</row>
+    <row label="r3">5-9 trips</row>
+    <row label="r4">10 or more trips</row>
+  </radio>
+  <radio label="Q11">
+    <title>&lt;strong&gt;Business travel (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero</row>
+    <row label="r2">1-4 trips</row>
+    <row label="r3">5-9 trips</row>
+    <row label="r4">10 or more trips</row>
+  </radio>
+  <radio label="Q12">
+    <title>&lt;strong&gt;Convention, conferences or other group meetings travel (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero</row>
+    <row label="r2">1-4 trips</row>
+    <row label="r3">5-9 trips</row>
+    <row label="r4">10 or more trips</row>
+  </radio>
+  <text label="Continue" optional="0" size="25">
+    <title>Please carefully and correctly type the word "continue" in the space below.</title>
+    <row label="r1">&amp;nbsp;</row>
+  </text>
+  <suspend/>
+  <radio label="QContinue" optional="1" where="execute,survey,report">
+    <title>Hidden Continue Variable</title>
+    <comment>Select one</comment>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <radio label="Q17">
+    <title>&lt;strong&gt;Which best describes how excited you are about &lt;u&gt;LEISURE TRAVEL&lt;/u&gt; in the NEXT TWELVE (12) MONTHS?&amp;nbsp; (Please answer using the 11-point scale below)&lt;/strong&gt;</title>
+    <row label="r1">10 - I am extremely excited</row>
+    <row label="r2">9</row>
+    <row label="r3">8</row>
+    <row label="r4">7</row>
+    <row label="r5">6</row>
+    <row label="r6">5</row>
+    <row label="r7">4</row>
+    <row label="r8">3</row>
+    <row label="r9">2</row>
+    <row label="r10">1</row>
+    <row label="r11">0 - I am not at all excited</row>
+  </radio>
+  <radio label="Q13">
+    <title>&lt;strong&gt;Realistically, how many days will you have available for leisure travel in the NEXT TWELVE (12) MONTHS? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero to 7 days</row>
+    <row label="r2">8 to 14 days</row>
+    <row label="r3">15 to 21 days</row>
+    <row label="r4">22 to 30 days</row>
+    <row label="r5">Over 30 days</row>
+  </radio>
+  <radio label="Q105">
+    <title>&lt;strong&gt;How many weeks &lt;u&gt;IN ADVANCE&lt;/u&gt; would you typically begin planning a domestic leisure trip (of at least one week in length)?&lt;/strong&gt;</title>
+    <row label="r1">1-4 weeks</row>
+    <row label="r2">5-8 weeks</row>
+    <row label="r3">9-12 weeks</row>
+    <row label="r4">13-16 weeks</row>
+    <row label="r5">17-20 weeks</row>
+    <row label="r6">21-24 weeks</row>
+    <row label="r7">25 or more weeks</row>
+  </radio>
+  <suspend/>
+  <term label="te2" cond="(Q9.r1) and (Q10.r1) and (Q11.r1) and (Q12.r1)">END</term>
+  <suspend/>
+  <radio label="Q19">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you traveled for any reason on a &lt;u&gt;commercial airline&lt;/u&gt;?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q20" cond="(Q19.r1)" atleast="1" comment="">
+    <title>&lt;strong&gt;Which of these airlines have you flown on in the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1" randomize="0">American</row>
+    <row label="r2" randomize="0">Southwest</row>
+    <row label="r3" randomize="0">Delta</row>
+    <row label="r4" randomize="0">United</row>
+    <row label="r5" randomize="0">Air Canada</row>
+    <row label="r6" randomize="0">Alaska</row>
+    <row label="r7" randomize="0">JetBlue</row>
+    <row label="r8" randomize="0">WestJet</row>
+    <row label="r9" randomize="0">Spirit</row>
+    <row label="r10" randomize="0">Aeromexico</row>
+    <row label="r11" randomize="0">Hawaiian</row>
+    <row label="r13" randomize="0">Volaris</row>
+    <row label="r16" randomize="0">Sun Country Airlines</row>
+    <row label="r31">British Airways</row>
+    <row label="r32">Aer Lingus</row>
+    <row label="r17">Ryanair</row>
+    <row label="r18" randomize="0">Lufthansa Group</row>
+    <row label="r19" randomize="0">IAG - International Airlines Group</row>
+    <row label="r20" randomize="0">Air France - KLM</row>
+    <row label="r21" randomize="0">Turkish Airlines</row>
+    <row label="r33">avianca air</row>
+    <row label="r34">Copa Airlines</row>
+    <row label="r35">Porter Airlines</row>
+    <row label="r22" randomize="0">China Southern Airlines</row>
+    <row label="r23" randomize="0">Air China</row>
+    <row label="r24" randomize="0">China Eastern Airlines</row>
+    <row label="r25" randomize="0">Emirates</row>
+    <row label="r26" randomize="0">Japan Airlines</row>
+    <row label="r27" randomize="0">All Nippon Airways</row>
+    <row label="r28">Cathay Pacific</row>
+    <row label="r29" randomize="0">IndiGo</row>
+    <row label="r12" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q21" cond="(Q19.r1)">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, which of these airports have you used? (Select any airport you originated in, traveled through or into)&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Atlanta - Hartsfield-Jackson International</row>
+    <row label="r2">Dallas/Fort Worth International</row>
+    <row label="r3">Dallas - Love Field</row>
+    <row label="r4">Denver International</row>
+    <row label="r5">Chicago - O'Hare International</row>
+    <row label="r6">Chicago - Midway International</row>
+    <row label="r7">Los Angeles International</row>
+    <row label="r8">New York City - John F. Kennedy International</row>
+    <row label="r9">New York - LaGuardia</row>
+    <row label="r10">Newark Liberty International</row>
+    <row label="r11">Charlotte Douglas International</row>
+    <row label="r12">Las Vegas - Harry Reid International</row>
+    <row label="r13">Phoenix Sky Harbor International</row>
+    <row label="r14">Orlando International</row>
+    <row label="r15">Seattle&#8211;Tacoma International</row>
+    <row label="r16">Miami International</row>
+    <row label="r17">Houston - George Bush Intercontinental</row>
+    <row label="r18">San Francisco International</row>
+    <row label="r19">Fort Lauderdale&#8211;Hollywood International</row>
+    <row label="r20">Minneapolis&#8211;Saint Paul International</row>
+    <row label="r21">Detroit Metropolitan</row>
+    <row label="r22">Boston - Logan International</row>
+    <row label="r23">Salt Lake City International</row>
+    <row label="r24">Philadelphia International</row>
+    <row label="r25">Tampa International</row>
+    <row label="r26">San Diego International</row>
+    <row label="r27">Nashville International</row>
+    <row label="r28">Baltimore/Washington International</row>
+    <row label="r29">Washington - Dulles International</row>
+    <row label="r30">Washington - Reagan International</row>
+    <row label="r32">Milwaukee - Mitchell International Airport</row>
+    <row label="r33">Kansas City International Airport (MCI)</row>
+    <row label="r34">Oklahoma City - Will Rogers World Airport</row>
+    <row label="r35">San Antonio International Airport</row>
+    <row label="r36">Indianapolis International Airport (IND)</row>
+    <row label="r37">Cleveland Hopkins International Airport</row>
+    <row label="r38">Pittsburgh International Airport</row>
+    <row label="r39">Columbus - John Glenn International Airport</row>
+    <row label="r40">Cincinnati/Northern Kentucky International Airport</row>
+  </checkbox>
+  <radio label="Q24">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you traveled &lt;u&gt;outside the United States&lt;/u&gt;?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <radio label="Q88">
+    <title>&lt;strong&gt;How likely are you to &lt;u&gt;travel outside the United States&lt;/u&gt; for leisure in the NEXT TWELVE (12) MONTHS?&lt;/strong&gt;</title>
+    <row label="r1">Very likely</row>
+    <row label="r2">Likely</row>
+    <row label="r3">Neutral (neither likely nor unlikely)</row>
+    <row label="r4">Unlikely</row>
+    <row label="r5">Very unlikely</row>
+  </radio>
+  <radio label="Q25">
+    <title>&lt;strong&gt;In the past &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you traveled &lt;u&gt;specifically to attend a sporting event&lt;/u&gt;?&amp;nbsp; (Please include travel to professional, semi-professional, amateur or school-related sporting events)&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q26" cond="(Q25.r1)">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, w&lt;/strong&gt;&lt;strong&gt;hich type of sporting events have you traveled to attend? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Professional sports</row>
+    <row label="r2">Semi-professional sports</row>
+    <row label="r3">Amateur sports (non-school-related)</row>
+    <row label="r4">Amateur sports (school-related)</row>
+    <row label="r5">Video gaming&amp;nbsp;or&amp;nbsp;electronic sports (e-sports)</row>
+    <row label="r6">College sporting event</row>
+    <row label="r7">School sporting event (e.g., high school)</row>
+  </checkbox>
+  <radio label="Q27">
+    <title>&lt;strong&gt;In the past &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you traveled (50-miles or more from your home) &lt;u&gt;specifically to attend a special event of any type&lt;/u&gt; (music festivals, other festivals, parades, charity or fundraising events, etc.)?&amp;nbsp;&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q28" cond="(Q27.r1)" atleast="1">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, which festivals or special events have you attended while traveling (&lt;u&gt;50-miles or more away from your home)&lt;/u&gt;? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1" randomize="0">Music concert(s)</row>
+    <row label="r2" randomize="0">Music festival(s)</row>
+    <row label="r3">Parade(s)</row>
+    <row label="r4">Cultural event(s)</row>
+    <row label="r5">Art event(s)</row>
+    <row label="r6">Food and/or drink festival(s)</row>
+    <row label="r8">State Fair(s)</row>
+    <row label="r13">Agriculture-related events</row>
+    <row label="r14">Religious event(s)</row>
+    <row label="r15">Political event(s)</row>
+    <row label="r10" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <radio label="Q29">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, on any trips have you &lt;u&gt;STAYED OVERNIGHT IN ANY&amp;nbsp; PAID LODGING (i.e., a hotel, motel, inn, vacation rental, Airbnb type rental, etc.)&lt;/u&gt;?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q30" cond="(Q29.r1)">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, w&lt;/strong&gt;&lt;strong&gt;hich type of paid lodging have you stayed in? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Luxury or 5-star hotel or resort</row>
+    <row label="r2">Full-service or 3-4 star hotel or resort</row>
+    <row label="r3">Budget hotel or motel</row>
+    <row label="r4">Bed &amp;amp; breakfast Inn</row>
+    <row label="r5">Vacation home rental</row>
+    <row label="r6">Time-share property</row>
+    <row label="r7">Peer-to-peer lodging (i.e., Airbnb, VRBO, etc.)</row>
+    <row label="r8">Campground or RV park</row>
+  </checkbox>
+  <suspend/>
+  <checkbox label="Q33" cond="(Q30.r1 or Q30.r2)" atleast="1">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, in which of these hotel brands have you stayed?&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Best Western</row>
+    <row label="r2">Candlewood Suites</row>
+    <row label="r3">Comfort Inn</row>
+    <row label="r4">Courtyard by Marriott</row>
+    <row label="r5">Crowne Plaza</row>
+    <row label="r6">Days Inn</row>
+    <row label="r7">DoubleTree</row>
+    <row label="r8">Embassy Suites</row>
+    <row label="r9">Four Seasons</row>
+    <row label="r10">Hampton Inn</row>
+    <row label="r11">Hilton</row>
+    <row label="r12">Hilton Garden Inn</row>
+    <row label="r13">Holiday Inn</row>
+    <row label="r14">Holiday Inn Express</row>
+    <row label="r15">Hyatt</row>
+    <row label="r16">Intercontinental Hotels &amp;amp; Resorts</row>
+    <row label="r17">Marriott</row>
+    <row label="r18">Quality Inn</row>
+    <row label="r19">Radisson</row>
+    <row label="r20">Ritz-Carlton</row>
+    <row label="r21">Sheraton</row>
+    <row label="r22">Staybridge Suites</row>
+    <row label="r23">Walt Disney Parks and Resorts</row>
+    <row label="r24">Wyndham Hotels &amp;amp; Resorts</row>
+    <row label="r25" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q34" cond="(Q29.r1)" atleast="1">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, which of these websites do you recall using to book any travel lodging?&lt;/strong&gt;</title>
+    <row label="r1">Hotels.com</row>
+    <row label="r2">Expedia.com</row>
+    <row label="r3">Travelocity.com</row>
+    <row label="r4">Trivago.com</row>
+    <row label="r5">Booking.com</row>
+    <row label="r6">Airbnb.com</row>
+    <row label="r7">VRBO.com</row>
+    <row label="r8">Hostelworld.com</row>
+    <row label="r9">Priceline.com</row>
+    <row label="r10">Tripadvisor.com</row>
+    <row label="r11" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <radio label="Q36">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you traveled on a &lt;u&gt;commercial cruise line&lt;/u&gt; (at least one night onboard a ship)?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q37" cond="(Q36.r1)" atleast="1" shuffle="rows">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, on which of these commercial cruise lines have you traveled?&amp;nbsp;&lt;/strong&gt;</title>
+    <row label="r1">American Cruise Lines</row>
+    <row label="r2">Azamara</row>
+    <row label="r3">Carnival Cruise Line</row>
+    <row label="r4">Celebrity Cruises</row>
+    <row label="r5">Costa Cruises</row>
+    <row label="r6">Crystal Cruises</row>
+    <row label="r7">Cunard Line</row>
+    <row label="r8">Disney Cruise Line</row>
+    <row label="r9">Hapag-Lloyd Cruises</row>
+    <row label="r10">Holland America Line</row>
+    <row label="r11">MSC Cruises</row>
+    <row label="r12">Norwegian Cruise Line</row>
+    <row label="r13">Oceania Cruises</row>
+    <row label="r14">Paul Gauguin Cruises</row>
+    <row label="r15">Princess Cruises</row>
+    <row label="r16">Regent Seven Seas Cruises</row>
+    <row label="r17">Royal Caribbean International</row>
+    <row label="r18">Seabourn Cruise Line</row>
+    <row label="r19">Silversea Cruises</row>
+    <row label="r20">Viking Ocean Cruises</row>
+    <row label="r21">Virgin Voyages</row>
+    <row label="r22">Windstar Cruises</row>
+    <row label="r23" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <suspend/>
+  <radio label="Q38">
+    <title>&lt;strong&gt;In the PAST 12 MONTHS, have you taken an &lt;u&gt;escorted group tour&lt;/u&gt; while traveling?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <radio comment="" label="Q415">
+    <title>&lt;p&gt;&lt;strong&gt;Thinking about leisure travel, do you generally prefer to travel by air or automobile (i.e., road trips)? (Select one that best completes the sentence)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;When it comes to road trips vs. air travel, I ___________________.&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r5">Strongly prefer air travel</row>
+    <row label="r6">Prefer air travel</row>
+    <row label="r7">Neutral - I have no preference</row>
+    <row label="r8">Prefer road trips</row>
+    <row label="r9">Strongly prefer road trips</row>
+  </radio>
+  <radio label="Q405">
+    <title>&lt;p&gt;&lt;strong&gt;Solo leisure travel is when someone goes on a leisure trip by themselves, without friends or companions.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you taken a solo leisure trip?&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <radio label="Q317">
+    <title>&lt;p&gt;&lt;strong&gt;How much do you agree or disagree with these statements?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Having luxury travel experiences is usually an important part of my leisure trips.&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+  </radio>
+  <radio label="Q413" comment="">
+    <title>&lt;p&gt;&lt;strong&gt;I am interested in taking MULTI-GENERATIONAL TRIPS (i.e., travel with at least 3 generations of your family.)&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q60" atleast="1">
+    <title>&lt;strong&gt;Which of the following types of credit cards do you personally currently hold? (Select all that you have)&lt;/strong&gt;</title>
+    <row label="r1">American Express</row>
+    <row label="r2">Discover</row>
+    <row label="r3">Visa</row>
+    <row label="r4">Mastercard</row>
+    <row label="r5" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <radio label="Q40">
+    <title>&lt;strong&gt;Have you used &lt;u&gt;CREDIT CARD POINTS OR REWARDS&lt;/u&gt; for travel-related purchases within the PAST TWELVE (12) MONTHS?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">Not sure</row>
+  </radio>
+  <suspend/>
+  <radio label="Q42">
+    <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS have you taken a trip (50 miles or more from home) with a pet (e.g., your dog, cat or other animal)?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">Not sure</row>
+  </radio>
+  <suspend/>
+  <radio label="Q44" builderHint="{&quot;rocochoName&quot;:&quot;radiogrid&quot;}" colLegendRows="10,20,30,40" shuffle="rows">
+    <title>&lt;strong&gt;Tell us about &lt;u&gt;your hobbies and passions&lt;/u&gt;.&amp;nbsp; &lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;Please use the scale below to describe your interest in each.&lt;/strong&gt;</title>
+    <row label="r1">Music festivals (multi-day events)</row>
+    <row label="r2">Musical concerts (pop, rock, hip hop, alternative, modern, etc.)</row>
+    <row label="r3">Musical concerts (classical, symphonies, etc.)</row>
+    <row label="r4">Mountain biking (off road or gravel)</row>
+    <row label="r5">Motorcycle touring</row>
+    <row label="r6">Hunting (Big game)</row>
+    <row label="r7">Hunting (Birds, small game)</row>
+    <row label="r8">Hiking (day hikes)</row>
+    <row label="r9">Hiking (over-night on trail, longer haul)</row>
+    <row label="r10">Camping</row>
+    <row label="r11">Recreational vehicle travel</row>
+    <row label="r12">Food and cuisine</row>
+    <row label="r13">Wine</row>
+    <row label="r14">Craft beers</row>
+    <row label="r15">Sailing or boating</row>
+    <row label="r16">Canoeing, kayaking or rafting</row>
+    <row label="r17">Photography</row>
+    <row label="r18">Bars, nightclubs</row>
+    <row label="r19">Theater or plays, (on or off Broadway productions)</row>
+    <row label="r20">Art museums</row>
+    <row label="r21">Attending professional sports (large-venue, like NFL or MLB)</row>
+    <row label="r22">Attending college sports (large-venue, like NCAA events)</row>
+    <row label="r23">Asian pop culture (Anime, Manga, K-Pop, etc.)</row>
+    <row label="r24">Video games - Video gaming</row>
+    <row label="r25">Golf</row>
+    <row label="r26">Fishing (Freshwater)</row>
+    <row label="r27">Fishing (Saltwater or deep sea)</row>
+    <row label="r28">Enjoying theme or amusement parks</row>
+    <row label="r29">Skiing or snowboarding</row>
+    <row label="r30">Birdwatching - Birding</row>
+    <row label="r31">Crafting, DIY or creative projects</row>
+    <row label="r32">Fitness, health and wellness (exercise, spas, yoga, organic foods, etc.)</row>
+    <row label="r33">Vegan foods &amp;amp; lifestyle</row>
+    <row label="r34">Fashion</row>
+    <row label="r35">International travel (taking trips outside the USA)</row>
+    <row label="r36">Marijuana or cannabis-related products</row>
+    <row label="r37">Gaming or gambling</row>
+    <row label="r38">Geocaching</row>
+    <row label="r39">Shopping</row>
+    <row label="r40">Visiting historical sites and attractions</row>
+    <row label="r41">Voluntourism activities (Volunteering while traveling)</row>
+    <row label="r42">Agri-tourism (Visiting farms, orchards, wineries, and other agricultural attractions)</row>
+    <row label="r43">Select "Moderate Interest" for this line</row>
+    <col label="c1">I have no interest in this</col>
+    <col label="c2">A little or some interest</col>
+    <col label="c3">Moderate interest</col>
+    <col label="c4">High interest</col>
+    <col label="c5">Extremely high interest - I'm passionate about this</col>
+  </radio>
+  <suspend/>
+  <term label="te3" cond="not(Q44.r43.c3)">END</term>
+  <suspend/>
+  <radio label="Q45">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;Thinking carefully about how you expect to spend your income in the NEXT THREE MONTHS, please use the scale below to describe your spending priorities.&amp;nbsp; (Select one)&lt;br /&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;&lt;span style="color: black;"&gt;Leisure travel will be a(n) _________________.&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Extremely high priority</row>
+    <row label="r2">High priority</row>
+    <row label="r3">Somewhat high priority</row>
+    <row label="r4">Neutral - neither high nor low priority</row>
+    <row label="r5">Somewhat low priority</row>
+    <row label="r6">Low priority</row>
+    <row label="r7">Extremely low priority</row>
+  </radio>
+  <radio label="Q46">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;Would you say that you (and your household) are better off or worse off financially than you were a year ago? (Select one)&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Much better off</row>
+    <row label="r2">Better off</row>
+    <row label="r3">UNCHANGED - Neither better off nor worse off</row>
+    <row label="r4">Worse off</row>
+    <row label="r5">Much worse off</row>
+  </radio>
+  <radio label="Q47">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;LOOKING FORWARD&#8212;do you feel that a year from now, you (and your household) will be better off financially, or worse off, or just about the same as now?&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Much better off</row>
+    <row label="r2">Better off</row>
+    <row label="r3">Just about the same - Neither better off nor worse off</row>
+    <row label="r4">Worse off</row>
+    <row label="r5">Much worse off</row>
+  </radio>
+  <radio label="Q48">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;Thinking only of your household's finances, do you feel NOW is a good or bad time for you to spend money on leisure travel? (Select one)&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Yes - It is a very good time</row>
+    <row label="r2">Yes - It is a good time</row>
+    <row label="r3">It is neither a good time nor bad time</row>
+    <row label="r4">No - It is a bad time</row>
+    <row label="r5">No - It is a very bad time</row>
+  </radio>
+  <number label="Q51" optional="0" rowLegend="left" size="10">
+    <title>&lt;strong&gt;How much IN TOTAL is the maximum you will spend on leisure travel (including airfare, accommodations and all other trip related spending) during the NEXT 12 MONTHS?&lt;/strong&gt;</title>
+    <row label="r1" ss:preText="$" verify="range(0,100000)">&lt;strong /&gt;&lt;strong&gt;Maximum I would spend on leisure travel (next 12 months):&lt;/strong&gt;</row>
+  </number>
+  <suspend/>
+  <radio label="Q52">
+    <title>&lt;strong&gt;&lt;span style="color: black;"&gt;How important are travel rewards programs (hotels, airlines, etc.) to how you generally plan your leisure travels?&lt;/span&gt;&lt;/strong&gt;</title>
+    <row label="r1">Extremely important</row>
+    <row label="r2">Important</row>
+    <row label="r3">Slightly important</row>
+    <row label="r4">Neutral -&amp;nbsp; neither important nor unimportant</row>
+    <row label="r5">Slightly unimportant</row>
+    <row label="r6">Unimportant</row>
+    <row label="r7">Extremely unimportant</row>
+  </radio>
+  <checkbox label="Q53" atleast="1">
+    <title>&lt;strong&gt;Which of these AIRLINE REWARDS PROGRAMS do you currently use? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Alaska Airlines Mileage Plan</row>
+    <row label="r2">Delta SkyMiles</row>
+    <row label="r3">American Advantage</row>
+    <row label="r4">JetBlue TrueBlue</row>
+    <row label="r5">Southwest Rapid Rewards</row>
+    <row label="r6">United MileagePlus</row>
+    <row label="r7">Free Spirit</row>
+    <row label="r8">Frontier Miles (or &lt;em style="color: #4c4c4c;"&gt;&lt;span&gt;The New Frontier)&lt;/span&gt;&lt;/em&gt;</row>
+    <row label="r9">Hawaiian Miles</row>
+    <row label="r12">Air Canada &#8211; Aeroplan</row>
+    <row label="r13">Aerom&#233;xico &#8211; Club Premier</row>
+    <row label="r10">Other</row>
+    <row label="r11" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q54" atleast="1">
+    <title>&lt;strong&gt;Which of these HOTEL REWARDS PROGRAMS do you currently use? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">ALL - Accor Live Limitless</row>
+    <row label="r2">Wyndham Rewards</row>
+    <row label="r3">World of Hyatt</row>
+    <row label="r4">Marriott Bonvoy</row>
+    <row label="r5">Hilton Honors</row>
+    <row label="r6">Omni Select Guest</row>
+    <row label="r7">Choice Privileges</row>
+    <row label="r8">IHG Rewards</row>
+    <row label="r9">Radisson Rewards Americas</row>
+    <row label="r10">Best Western Rewards</row>
+    <row label="r11">Sonesta Travel Pass</row>
+    <row label="r12">INVITED (Small Luxury Hotels of the World)</row>
+    <row label="r13">Leaders Club (Leading Hotels of the World)</row>
+    <row label="r14">Stash Hotel Rewards</row>
+    <row label="r15">I Prefer Hotel Rewards</row>
+    <row label="r16">Other</row>
+    <row label="r17" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q55" atleast="1">
+    <title>&lt;strong&gt;Which of these BOOKING WEBSITE REWARDS PROGRAMS do you currently use? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Hotels.com Rewards</row>
+    <row label="r2">Orbitz Rewards</row>
+    <row label="r3">Booking.com Genius</row>
+    <row label="r4">Expedia Rewards</row>
+    <row label="r5">Trip.com Rewards</row>
+    <row label="r6">Other</row>
+    <row label="r7" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <html label="cm2" where="survey">&lt;p&gt;&lt;strong&gt;&lt;br&gt;-------------------------&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;How much do you agree or disagree with the following statements?&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;</html>
+  <radio label="Q58">
+    <title>&lt;strong&gt;I expect the United States will enter an economic recession sometime in the NEXT SIX (6) MONTHS.&lt;/strong&gt;</title>
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+  </radio>
+  <radio label="Q57">
+    <title>&lt;strong&gt;High travel prices have kept me from traveling in the past month.&lt;/strong&gt;</title>
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+  </radio>
+  <radio optional="0" label="Q403">
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+    <comment>Select one</comment>
+    <title>&lt;p&gt;&lt;strong&gt;How much do you agree or disagree with these statements?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;"I believe tourism in my community makes it a better place in which to live."&lt;/strong&gt;&lt;/p&gt;</title>
+  </radio>
+  <radio optional="0" label="Q416">
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral (neither agree nor disagree)</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+    <comment>Select one</comment>
+    <title>&lt;p&gt;&lt;strong&gt;"I &lt;u&gt;personally benefit&lt;/u&gt; from having tourism in my community."&lt;/strong&gt;&lt;/p&gt;</title>
+  </radio>
+  <suspend/>
+  <checkbox label="Q61" atleast="1">
+    <title>&lt;strong&gt;&lt;u&gt;In the PAST SIX (6) MONTHS&lt;/u&gt;, which (if any) of the following have&amp;nbsp;&lt;u&gt;kept you from traveling&lt;/u&gt; more than you would have otherwise preferred? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">The possibility of flight cancellations</row>
+    <row label="r2">Travel is too expensive right now</row>
+    <row label="r3">Gasoline was too expensive</row>
+    <row label="r4">Airfare was too expensive</row>
+    <row label="r5">Personal financial reasons</row>
+    <row label="r6">Crowds - too many people traveling</row>
+    <row label="r7">Safety concerns - risk of contracting the COVID virus</row>
+    <row label="r8">Safety concerns (other non-COVID related)</row>
+    <row label="r9">Not enough PTO/vacation time</row>
+    <row label="r10">Sold out/No reservations available</row>
+    <row label="r11">I'm too busy at work</row>
+    <row label="r12">Weather</row>
+    <row label="r13">Lack of availability (at hotels, golf courses, spas, etc.)</row>
+    <row label="r14">Health/Illness</row>
+    <row label="r15">The pandemic is not 100% over</row>
+    <row label="r16" exclusive="1">NONE OF THESE</row>
+  </checkbox>
+  <suspend/>
+  <html label="cm4" where="survey">&lt;strong&gt;Please remember, for this survey a &lt;u&gt;TRIP&lt;/u&gt; is any travel at least 50 miles or more one way from your home to visit a place.&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;For business trips, please DO NOT INCLUDE any regularly scheduled travel to your work.&lt;/strong&gt;</html>
+  <select label="Q67" rowLegend="left">
+    <title>&lt;strong&gt;How many &lt;u&gt;OVERNIGHT&lt;/u&gt; trips of each type have you taken in the &lt;u&gt;PAST MONTH&lt;/u&gt;?&amp;nbsp; (Select the correct number of each trip type)&lt;/strong&gt;</title>
+    <choice label="ch1">0</choice>
+    <choice label="ch2">1</choice>
+    <choice label="ch3">2</choice>
+    <choice label="ch4">3</choice>
+    <choice label="ch5">4</choice>
+    <choice label="ch6">5</choice>
+    <choice label="ch7">6</choice>
+    <choice label="ch8">7</choice>
+    <choice label="ch9">8</choice>
+    <choice label="ch10">9</choice>
+    <choice label="ch11">10 or more</choice>
+    <row label="r1">Leisure</row>
+    <row label="r2">Visit friends or relatives</row>
+    <row label="r3">Business</row>
+    <row label="r4">Convention, conference or group meetings</row>
+    <row label="r5">Other</row>
+  </select>
+  <select label="Q68" rowLegend="left">
+    <title>&lt;strong&gt;How many &lt;u&gt;DAY TRIPS&lt;/u&gt; trips of each type have you taken in the &lt;u&gt;PAST MONTH&lt;/u&gt;?&amp;nbsp; (Select the correct number of each trip type)&lt;/strong&gt;</title>
+    <choice label="ch1">0</choice>
+    <choice label="ch2">1</choice>
+    <choice label="ch3">2</choice>
+    <choice label="ch4">3</choice>
+    <choice label="ch5">4</choice>
+    <choice label="ch6">5</choice>
+    <choice label="ch7">6</choice>
+    <choice label="ch8">7</choice>
+    <choice label="ch9">8</choice>
+    <choice label="ch10">9</choice>
+    <choice label="ch11">10 or more</choice>
+    <row label="r1">Leisure</row>
+    <row label="r2">Visit friends or relatives</row>
+    <row label="r3">Business</row>
+    <row label="r4">Convention, conference or group meetings</row>
+    <row label="r5">Other</row>
+  </select>
+  <radio label="Q69">
+    <title>&lt;strong&gt;Please select "Rarely" as your answer to this question.&lt;/strong&gt;</title>
+    <comment>Select one</comment>
+    <row label="r1">Always</row>
+    <row label="r2">Frequently</row>
+    <row label="r3">Sometimes</row>
+    <row label="r4">Occasionally</row>
+    <row label="r5">Rarely</row>
+    <row label="r6">Never</row>
+  </radio>
+  <suspend/>
+  <term label="te4" cond="not(Q69.r5)">END</term>
+  <suspend/>
+  <checkbox shuffle="rows" label="Q199" atleast="1">
+    <title>&lt;strong&gt;Please think about WHY YOU TOOK THIS MOST RECENT OVERNIGHT LEISURE TRIP.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Which of the following &lt;u&gt;played a role in your decision to take this trip&lt;/u&gt;?&lt;/strong&gt;</title>
+    <comment>Select all that apply</comment>
+    <row label="r16">Relaxation&amp;nbsp;</row>
+    <row label="r17">Escape the stress of my daily life</row>
+    <row label="r19">Education or personal growth</row>
+    <row label="r20">Exploration (desire to see or experience new places)</row>
+    <row label="r22">Visit friends and/or relatives</row>
+    <row label="r23">Experience the culture of a place(s)</row>
+    <row label="r29">Romance/intimacy with my spouse or partner</row>
+    <row cond="condition.Parent" label="r24">Experiences for my children</row>
+    <row label="r25">Enjoy nature/spend time in The Great Outdoors</row>
+    <row label="r26">Self-Care (Enhancing my well-being/happiness)</row>
+    <row label="r27">Bragging rights (Enjoy the social benefits of being seen as well-traveled)</row>
+    <row label="r28">Serendipity - Enjoy the magic of unexpected experiences</row>
+    <row exclusive="1" randomize="0" label="r15">NONE OF THESE</row>
+  </checkbox>
+  <checkbox shuffle="rows" label="Q414" atleast="1">
+    <title>&lt;strong&gt;Which of the following &lt;u&gt;SPECIFIC TRAVEL ACTIVITIES&lt;/u&gt; were important in your decision to take this most recent overnight leisure trip?&lt;/strong&gt;</title>
+    <comment>Select those that were &lt;u&gt;important in your decision to take the trip&lt;/u&gt; (not necessarily all those you did on the trip.)</comment>
+    <row label="r8">Visit museum(s) or cultural institutions</row>
+    <row label="r19">Attend theater, plays or musicals</row>
+    <row label="r9">Attend a festival or special event</row>
+    <row randomize="0" label="r16">Attend a professional sporting event (NFL, NBA, WNBA, MLB, etc.)&amp;nbsp;</row>
+    <row randomize="0" label="r25">Attend a sporting event (College sports)</row>
+    <row label="r26" randomize="0">Attend a sporting event (Youth sports)</row>
+    <row cond="condition.Parent" label="r17">Children's activities</row>
+    <row label="r14">Shopping</row>
+    <row randomize="0" label="r11">Outdoor activities (hiking, biking, fishing, camping, wildlife viewing, etc.)</row>
+    <row label="r23" randomize="0">Outdoor summer water sports (boating, canoeing, water skiing, etc.)</row>
+    <row randomize="0" label="r27">&lt;span&gt;Outdoor winter sports (Skiing, snowboarding, ice fishing, etc.)&lt;/span&gt;</row>
+    <row label="r18">Restaurants and dining</row>
+    <row label="r30">Take pictures or videos for my social media posts</row>
+    <row label="r22">Attend a musical performance(s)</row>
+    <row label="r29">People watching</row>
+    <row label="r21">Meet and interact with local people</row>
+    <row label="r20">Visit historical sites or attractions</row>
+    <row label="r24">Visit State or National Parks</row>
+    <row label="r28">Visit wineries or breweries</row>
+    <row exclusive="1" label="r15" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q353" atleast="1" optional="0">
+    <row label="r1">Airplane</row>
+    <row label="r2">Personal car or rental car (road trip)</row>
+    <row label="r8">Recreational vehicle / Motorhome / Fifth wheel</row>
+    <row label="r3">Train</row>
+    <row label="r4">Bus</row>
+    <row label="r6">Cruise</row>
+    <row exclusive="1" label="r5" randomize="0">Other</row>
+    <row label="r7">NONE OF THESE</row>
+    <comment>Select all that apply</comment>
+    <title>&lt;strong&gt;How did you travel to (or between) destinations on this trip? (Select all that apply)&lt;/strong&gt;</title>
+  </checkbox>
+  <suspend/>
+  <radio label="Q84">
+    <title>&lt;strong&gt;&lt;u&gt;IN TOTAL&lt;/u&gt;, how many &lt;u&gt;leisure trips&lt;/u&gt; (of 50 miles or more from your home) do you expect to take in&amp;nbsp;NEXT TWELVE (12) MONTHS? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Zero</row>
+    <row label="r2">1</row>
+    <row label="r3">2</row>
+    <row label="r4">3</row>
+    <row label="r5">4</row>
+    <row label="r6">5</row>
+    <row label="r7">6</row>
+    <row label="r8">7</row>
+    <row label="r9">8</row>
+    <row label="r10">9</row>
+    <row label="r11">10 or more</row>
+    <row label="r12">I don't know</row>
+  </radio>
+  <checkbox label="Q85" atleast="1">
+    <title>&lt;strong&gt;In which months do you currently have any leisure trips planned (even if only tentatively)? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r28">January 2025</row>
+    <row label="r29">February 2025</row>
+    <row label="r30">March 2025</row>
+    <row label="r31">April 2025</row>
+    <row label="r34">May 2024</row>
+    <row label="r32">June 2024</row>
+    <row label="r33">July 2024</row>
+    <row label="r35">August 2025</row>
+    <row label="r13">Sometime later in 2025</row>
+    <row label="r14" exclusive="1" randomize="0">NONE OF THESE - I HAVE NO TRIPS CURRENTLY PLANNED</row>
+  </checkbox>
+  <suspend/>
+  <text label="Q86" size="25">
+    <title>&lt;strong&gt;Which &lt;u&gt;DOMESTIC DESTINATIONS&lt;/u&gt; do you most want to visit in the NEXT TWELVE (12) MONTHS?&amp;nbsp; (Write in up to five)&lt;br /&gt;&lt;br /&gt;(Please only include destinations in the United States)&lt;br /&gt;&lt;/strong&gt;</title>
+    <row label="r1">1.</row>
+    <row label="r2">2.</row>
+    <row label="r3">3.</row>
+    <row label="r4">4.</row>
+    <row label="r5">5.</row>
+  </text>
+  <text label="Q87" size="25">
+    <title>&lt;strong&gt;Which &lt;u&gt;FOREIGN DESTINATIONS&lt;/u&gt; do you most want to visit in the NEXT TWELVE (12) MONTHS?&amp;nbsp; (Write in up to five)&lt;br /&gt;&lt;br /&gt;(Please only include destinations outside the United States)&lt;br /&gt;&lt;/strong&gt;</title>
+    <row label="r1">1.</row>
+    <row label="r2">2.</row>
+    <row label="r3">3.</row>
+    <row label="r4">4.</row>
+    <row label="r5">5.</row>
+  </text>
+  <suspend/>
+  <checkbox label="Q91" atleast="1">
+    <title>&lt;strong&gt;In the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, have you used any of the following social media platforms&amp;nbsp;&lt;u&gt;TO PREPARE FOR OR PLAN YOUR TRAVELS?&lt;/u&gt; (Select all that apply)&lt;/strong&gt;&lt;br /&gt;&amp;nbsp;&lt;br /&gt;&lt;strong&gt;PLEASE ONLY CHECK IF USED FOR &lt;u&gt;TRAVEL PLANNING, IDEAS OR INSPIRATION&lt;/u&gt;&lt;/strong&gt;</title>
+    <row label="r1">Facebook</row>
+    <row label="r2">X (formerly Twitter)</row>
+    <row label="r3">Instagram</row>
+    <row label="r4">Youtube</row>
+    <row label="r5">TikTok</row>
+    <row label="r6">Snapchat</row>
+    <row label="r7">WeChat</row>
+    <row label="r8">Pinterest</row>
+    <row label="r9">Reddit</row>
+    <row label="r10">Quora</row>
+    <row label="r11" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q89" atleast="1">
+    <title>&lt;strong&gt;In the PAST 12 MONTHS, which of these resources have you used to help plan your travel? (Select all that apply)&lt;br /&gt;&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;&lt;em&gt;PLEASE ONLY CHECK IF USED FOR &lt;u&gt;TRAVEL PLANNING, IDEAS OR INSPIRATION&lt;/u&gt;&lt;/em&gt;&lt;/strong&gt;</title>
+    <row label="r1">Travel or lifestyle magazines (printed)</row>
+    <row label="r2">Newspaper travel section (printed)</row>
+    <row label="r3">Travel-related radio program</row>
+    <row label="r4">Commercial guidebook (i.e. Fodor's, Lonely Planet, etc.)</row>
+    <row label="r5">Free printed destination guide books or pamphlets</row>
+    <row label="r6">Television programming (broadcast or streaming)</row>
+    <row label="r7">Travel agent</row>
+    <row label="r8">Direct mail piece</row>
+    <row label="r9" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q90" atleast="1">
+    <title>&lt;strong&gt;&lt;span style="color: #333333;"&gt;In the&amp;nbsp;&lt;u&gt;PAST 12 MONTHS&lt;/u&gt;, which of these resources have you used to help plan your travel? (Select all that apply)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;em&gt;PLEASE ONLY CHECK IF USED FOR &lt;u&gt;TRAVEL PLANNING, IDEAS OR INSPIRATION&lt;/u&gt;&lt;/em&gt;&lt;/strong&gt;</title>
+    <row label="r1">Online content (articles and blogs)</row>
+    <row label="r2">Online content (travel business and attractions websites)</row>
+    <row label="r3">Online Travel Agency (Expedia, Travelocity, AirBnB.com, etc.)</row>
+    <row label="r4">Review websites&amp;nbsp;(Yelp, TripAdvisor, etc.)</row>
+    <row label="r5">Mapping site (Google Maps, Apple Maps, Bing Maps, etc.)</row>
+    <row label="r6">Travel-related e-mail newsletter(s)</row>
+    <row label="r7">Video online (e.g., Youtube.com, Instagram Reels, TikTok, etc.)</row>
+    <row label="r8">Podcasts or other audio file</row>
+    <row label="r9">Travel-related app on a mobile device or tablet</row>
+    <row label="r10">Live-streaming video (e.g., Facebook Live or live streams on Tiktok, etc.)</row>
+    <row label="r11">Travel or lifestyle magazine &lt;u&gt;websites&lt;/u&gt;</row>
+    <row label="r12">Newspaper travel section &lt;u&gt;websites&lt;/u&gt;</row>
+    <row label="r13" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q92" atleast="1">
+    <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS, have you used a destination's official local Visitors or Convention Bureau (or Chamber of Commerce), or state or national government tourism office to help plan any travel? &amp;nbsp;&lt;br /&gt;&lt;br /&gt;If so, which resources did you use? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Official destination website</row>
+    <row label="r2">Official visitor guide (printed version)</row>
+    <row label="r3">Official visitor guide (online version)</row>
+    <row label="r4">Official visitor information center</row>
+    <row label="r5">Official destination APP on a mobile phone or tablet</row>
+    <row label="r6" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q94" atleast="1">
+    <title>&lt;strong&gt;Which of these &lt;u&gt;MAGAZINES (PRINTED OR ONLINE)&lt;/u&gt; have you read or paged through in the past TWELVE (12) MONTHS? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">AARP The Magazine</row>
+    <row label="r2">AARP Bulletin</row>
+    <row label="r3">Game Informer Magazine</row>
+    <row label="r4">Good Housekeeping Magazine</row>
+    <row label="r5">People Magazine</row>
+    <row label="r6">Consumer Reports Magazine</row>
+    <row label="r7">Southern Living Magazine</row>
+    <row label="r8">Reader's Digest</row>
+    <row label="r9">Cosmopolitan Magazine</row>
+    <row label="r10">Woman's Day Magazine</row>
+    <row label="r11">National Geographic Magazine</row>
+    <row label="r12">Real Simple Magazine</row>
+    <row label="r13">Us Weekly Magazine</row>
+    <row label="r14">Sports Illustrated Magazine</row>
+    <row label="r15">Food Network Magazine</row>
+    <row label="r16">The American Legion Magazine</row>
+    <row label="r17">InStyle Magazine</row>
+    <row label="r18">Taste of Home Magazine</row>
+    <row label="r19">Golf Digest</row>
+    <row label="r20">TIME Magazine</row>
+    <row label="r21">Smithsonian Magazine</row>
+    <row label="r22">Men's Health Magazine</row>
+    <row label="r23">Bon Appetit Magazine</row>
+    <row label="r24">Entertainment Weekly Magazine</row>
+    <row label="r25">Women's Health Magazine</row>
+    <row label="r26">The New Yorker Magazine</row>
+    <row label="r27">Vogue Magazine</row>
+    <row label="r28">Vanity Fair Magazine</row>
+    <row label="r29">Golf Magazine</row>
+    <row label="r30">Allure Magazine</row>
+    <row label="r31">Country Living Magazine</row>
+    <row label="r32">Car and Driver Magazine</row>
+    <row label="r33">TV Guide Magazine</row>
+    <row label="r34">Guideposts Magazine</row>
+    <row label="r35">Essence Magazine</row>
+    <row label="r36">Elle Magazine</row>
+    <row label="r37">Popular Mechanics Magazine</row>
+    <row label="r38">Men's Journal</row>
+    <row label="r39">Travel + Leisure Magazine</row>
+    <row label="r40">Food &amp;amp; Wine Magazine</row>
+    <row label="r41">GQ Magazine</row>
+    <row label="r42">Wir&lt;span style="font-size: 0.75rem;"&gt;e&lt;/span&gt;&lt;span style="font-size: 0.75rem;"&gt;d Magazine&lt;/span&gt;</row>
+    <row label="r43" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <html label="cm5" where="survey">&lt;strong&gt;Definition: A "&lt;u&gt;DIGITAL INFLUENCER or CREATOR&lt;/u&gt;" is a person who has established credibility online and who shares their opinions and experiences with a large audience. This can include bloggers, travel writers, YouTube or TikTok personalities and/or persons with large followings on social media (Twitter, Instagram, Facebook, Pinterest, TikTok, etc.)&amp;nbsp;&lt;/strong&gt;</html>
+  <radio label="Q96">
+    <title>&lt;strong&gt;In the past 12 months, have you used the opinions of a&amp;nbsp;&lt;u&gt;DIGITAL INFLUENCER or CREATOR&lt;/u&gt;&amp;nbsp;to help plan any travel?&amp;nbsp;&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I don't know</row>
+  </radio>
+  <radio label="Q97">
+    <title>&lt;strong&gt;In the past 12 months, have you used&amp;nbsp;&lt;u&gt;ONLINE VIDEO&lt;/u&gt; including visiting video sharing websites (e.g. Youtube.com, AOL Video, TikTok or Google Video) to plan any travel?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I don't know</row>
+  </radio>
+  <radio label="Q98">
+    <title>&lt;strong&gt;In the past 12 months, have you used a &lt;u&gt;TRAVEL AGENT&lt;/u&gt; or &lt;u&gt;TRAVEL ADVISOR&lt;/u&gt; to help plan any travel?&lt;br&gt;&lt;br&gt;(Please include only human agents or advisors, not online travel agencies where you have no human contact)&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I don't know</row>
+  </radio>
+  <radio label="Q331">
+    <title>&lt;p&gt;&lt;strong&gt;Artificial Intelligence (AI) tools like ChatGPT, Google Gemini or Microsoft Copilot have recently emerged.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In the past 12 months, have you used any such Artificial Intelligence (AI) tools specifically to help you plan (or prepare for) your trips?&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I don't know</row>
+  </radio>
+  <checkbox label="Q93" atleast="1">
+    <title>&lt;strong&gt;Please think about how travel destinations could best reach you with their messages right now.&amp;nbsp; &lt;br /&gt;&lt;br /&gt;Where would you generally be &lt;u&gt;MOST RECEPTIVE&lt;/u&gt; to learning about new destinations to visit? (Please select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Email</row>
+    <row label="r2">Facebook</row>
+    <row label="r3">Travel podcasts</row>
+    <row label="r4">Instagram</row>
+    <row label="r5">X (formerly known as Twitter)</row>
+    <row label="r6">TikTok</row>
+    <row label="r7">Pinterest</row>
+    <row label="r8">Online content (articles and blogs)</row>
+    <row label="r9">Websites found via a search engine</row>
+    <row label="r10">Advertisements on the Internet</row>
+    <row label="r11">Digital influencers or creators (online personalities with large followings)</row>
+    <row label="r12">APPs on my mobile phone</row>
+    <row label="r13">Text messages</row>
+    <row label="r14">Streaming video services (YouTube, Amazon, Hulu, Disney +, Max, etc.)</row>
+    <row label="r15">Broadcast television</row>
+    <row label="r16">Travel or lifestyle magazines (printed)</row>
+    <row label="r17">Newspaper travel sections (printed)</row>
+    <row label="r18">Official local or state visitor guides (printed)</row>
+    <row label="r19">Review websites (Yelp, TripAdvisor, Google Reviews, etc.)</row>
+    <row label="r20" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <radio optional="0" label="Q355">
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <comment>Select one</comment>
+    <title>&lt;strong&gt;On any of your vacations, have you ever visited the planet Jupiter or one of its moons?&amp;nbsp;&lt;/strong&gt;</title>
+  </radio>
+  <suspend/>
+  <term label="te5" cond="(Q355.r1)">Jupiter Travelers</term>
+  <suspend/>
+  <checkbox label="Q231" atleast="1">
+    <title>&lt;strong&gt;To which of these streaming services do you &lt;u&gt;currently subscribe&lt;/u&gt; or &lt;u&gt;regularly watch&lt;/u&gt;? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1" randomize="0">HBO Max (ad-supported)</row>
+    <row label="r2" randomize="0">HBO Max (ad-free)</row>
+    <row label="r3" randomize="0">Netflix (ad-supported)</row>
+    <row label="r4" randomize="0">Netflix (ad-free)</row>
+    <row label="r26" randomize="0">Amazon Prime Video (ad-supported)</row>
+    <row label="r25" randomize="0">Amazon Prime Video (ad-free)</row>
+    <row label="r5">tubi</row>
+    <row label="r8" randomize="0">Hulu (ad-free)</row>
+    <row label="r7" randomize="0">Hulu (ad-supported)</row>
+    <row label="r23" randomize="0">Disney+ to Disney+ (ad-free)</row>
+    <row label="r24" randomize="0">Disney+ (ad-supported)</row>
+    <row label="r9">Sling TV</row>
+    <row label="r10">Peacock Premium</row>
+    <row label="r11">Peacock Plus</row>
+    <row label="r12">Fubo TV</row>
+    <row label="r14">Apple TV+</row>
+    <row label="r15">YouTube Premium</row>
+    <row label="r16">Paramount+ (ad-supported)</row>
+    <row label="r17">Paramount+ (ad-free)</row>
+    <row label="r18" randomize="0">Discovery+ (ad-supported)</row>
+    <row label="r19" randomize="0">Discovery+ (ad-free)</row>
+    <row label="r20">ESPN+</row>
+    <row label="r21">Pluto TV</row>
+    <row label="r22" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q101" atleast="1">
+    <title>&lt;strong&gt;Which of these news sources do you &lt;u&gt;use on a regular basis&lt;/u&gt;? (Select all they apply)&lt;/strong&gt;</title>
+    <row label="r1">ABC News</row>
+    <row label="r2">CBS News</row>
+    <row label="r3">CNN</row>
+    <row label="r4">Fox News Channel</row>
+    <row label="r5">MSNBC</row>
+    <row label="r6">NBC News</row>
+    <row label="r7">The New York Times</row>
+    <row label="r8">USA Today</row>
+    <row label="r9">National Review</row>
+    <row label="r10">The Wall Street Journal</row>
+    <row label="r11">The Washington Post</row>
+    <row label="r12">The Washington Times</row>
+    <row label="r13">The Guardian</row>
+    <row label="r14">Al Jazeera</row>
+    <row label="r15">POLITICO</row>
+    <row label="r16">Bloomberg</row>
+    <row label="r17">NPR</row>
+    <row label="r18">Newsweek</row>
+    <row label="r19">The New Yorker</row>
+    <row label="r20">Time</row>
+    <row label="r21">U.S. News &amp;amp; World Report</row>
+    <row label="r22" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <radio label="Q102">
+    <title>&lt;strong&gt;Do you listen to any podcasts on a regular basis?&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+  </radio>
+  <suspend/>
+  <checkbox label="Q103" cond="(Q102.r1)" atleast="1">
+    <title>&lt;strong&gt;What podcast genres do you listen to &lt;u&gt;on a regular basis&lt;/u&gt;? (Select all that apply)&lt;/strong&gt;</title>
+    <row label="r1">Health/Fitness</row>
+    <row label="r2">Film &amp;amp; TV</row>
+    <row label="r3">Hobbies</row>
+    <row label="r4">Entertainment/Pop Culture</row>
+    <row label="r5">Fashion/Clothing</row>
+    <row label="r6">Real Estate</row>
+    <row label="r7">Family/Kids</row>
+    <row label="r8">Gaming</row>
+    <row label="r9">Business</row>
+    <row label="r10">Cooking/Recipes</row>
+    <row label="r11">Comedy</row>
+    <row label="r12">Restaurants/Cuisine</row>
+    <row label="r13">Arts/Literature</row>
+    <row label="r14">News/Politics</row>
+    <row label="r15">Sports</row>
+    <row label="r16">Finance</row>
+    <row label="r17">Music</row>
+    <row label="r18">Travel</row>
+    <row label="r19">Technology</row>
+    <row label="r20">Cars/Automotive</row>
+    <row label="r21">Career Services/Development</row>
+    <row label="r22">True Crime</row>
+    <row label="r23">Religion/Philosophy</row>
+    <row label="r24">Fiction</row>
+    <row label="r25">Self-help</row>
+    <row label="r26">History</row>
+    <row label="r27">Investigative Journalism</row>
+    <row label="r28">Science</row>
+    <row label="r29">OTHER</row>
+    <row label="r30" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <checkbox label="Q104" cond="(Q102.r1)" atleast="1">
+    <title>&lt;strong&gt;What streaming services do you typically use to listen to podcasts? (Select all that apply)&lt;/strong&gt;</title>
+    <comment>Select all that apply</comment>
+    <row label="r1">Apple Podcasts</row>
+    <row label="r2">Spotify</row>
+    <row label="r3">Google Podcasts</row>
+    <row label="r4">Stitcher</row>
+    <row label="r5">TuneIn</row>
+    <row label="r6">Amazon Music and Audible</row>
+    <row label="r7">iHeartRadio</row>
+    <row label="r8">Podchaser</row>
+    <row label="r9">YouTube</row>
+    <row label="r10">Pandora</row>
+    <row label="r11">Other</row>
+    <row label="r12" exclusive="1" randomize="0">NONE OF THESE</row>
+  </checkbox>
+  <suspend/>
+  <html label="cm6" where="survey">&lt;strong&gt;The next questions will explore destinations you have visited in the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt;--and those you are likely to visit in the &lt;u&gt;NEXT 12 MONTHS&lt;/u&gt;.&lt;br /&gt;&lt;/strong&gt;</html>
+  <checkbox label="Q107" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10,20,30,40">
+    <title>&lt;strong&gt;Which of these states have you visited (or traveled within) in the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt; and which will you be likely to visit (or travel within) in the &lt;u&gt;NEXT&amp;nbsp;12 MONTHS&lt;/u&gt;?&lt;/strong&gt;</title>
+    <col label="c1">&lt;strong&gt;I have visited (or traveled within) in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;strong&gt;I am likely to visit (or travel within) in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <row label="r1">Alabama</row>
+    <row label="r2">Alaska</row>
+    <row label="r3">Arizona</row>
+    <row label="r4">Arkansas</row>
+    <row label="r5">California</row>
+    <row label="r6">Colorado</row>
+    <row label="r7">Connecticut</row>
+    <row label="r8">Delaware</row>
+    <row label="r9">District of Columbia</row>
+    <row label="r10">Florida</row>
+    <row label="r11">Georgia</row>
+    <row label="r12">Hawaii</row>
+    <row label="r13">Idaho</row>
+    <row label="r14">Illinois</row>
+    <row label="r15">Indiana</row>
+    <row label="r16">Iowa</row>
+    <row label="r17">Kansas</row>
+    <row label="r18">Kentucky</row>
+    <row label="r19">Louisiana</row>
+    <row label="r20">Maine</row>
+    <row label="r21">Maryland</row>
+    <row label="r22">Massachusetts</row>
+    <row label="r23">Michigan</row>
+    <row label="r24">Minnesota</row>
+    <row label="r25">Mississippi</row>
+    <row label="r26">Missouri</row>
+    <row label="r27">Montana</row>
+    <row label="r28">Nebraska</row>
+    <row label="r29">Nevada</row>
+    <row label="r30">New Hampshire</row>
+    <row label="r31">New Jersey</row>
+    <row label="r32">New Mexico</row>
+    <row label="r33">New York</row>
+    <row label="r34">North Carolina</row>
+    <row label="r35">North Dakota</row>
+    <row label="r36">Ohio</row>
+    <row label="r37">Oklahoma</row>
+    <row label="r38">Oregon</row>
+    <row label="r39">Pennsylvania</row>
+    <row label="r40">Rhode Island</row>
+    <row label="r41">South Carolina</row>
+    <row label="r42">South Dakota</row>
+    <row label="r43">Tennessee</row>
+    <row label="r44">Texas</row>
+    <row label="r45">Utah</row>
+    <row label="r46">Vermont</row>
+    <row label="r47">Virginia</row>
+    <row label="r48">Washington</row>
+    <row label="r49">West Virginia</row>
+    <row label="r50">Wisconsin</row>
+    <row label="r51">Wyoming</row>
+  </checkbox>
+  <text label="Q175" size="25">
+    <title>&lt;strong&gt;What is the &lt;u&gt;top experience&lt;/u&gt; you would recommend to someone visiting Texas for leisure?&lt;/strong&gt;</title>
+    <comment>Be specific</comment>
+  </text>
+  <checkbox label="Q108" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10,20,30,40,50,60">
+    <title>&lt;strong&gt;Which of these destinations have you visited in the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt; and which will you be likely to visit in the &lt;u&gt;NEXT 12 MONTHS&lt;/u&gt;?&lt;/strong&gt;</title>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;&lt;/p&gt;</col>
+    <row label="r1">New York City</row>
+    <row label="r2">Los Angeles</row>
+    <row label="r3">Chicago</row>
+    <row label="r4">Houston</row>
+    <row label="r52">Orlando, FL</row>
+    <row label="r5">Phoenix</row>
+    <row label="r6">Philadelphia</row>
+    <row label="r7">Savannah, GA</row>
+    <row label="r8">Charleston, SC</row>
+    <row label="r10">San Diego</row>
+    <row label="r9">San Antonio</row>
+    <row label="r11" randomize="0">Dallas</row>
+    <row label="r13" randomize="0">Fort Worth</row>
+    <row label="r61" randomize="0">Irving, TX</row>
+    <row label="r12">Austin</row>
+    <row label="r14">Jacksonville</row>
+    <row label="r15">Columbus</row>
+    <row label="r16">Charlotte</row>
+    <row label="r17">Indianapolis</row>
+    <row label="r18">San Francisco</row>
+    <row label="r19">Seattle</row>
+    <row label="r20">Denver</row>
+    <row label="r21">Washington DC</row>
+    <row label="r22">Boston</row>
+    <row label="r23">Nashville</row>
+    <row label="r24">Detroit</row>
+    <row label="r25">Las Vegas</row>
+    <row label="r26">Oklahoma City</row>
+    <row label="r27">Portland</row>
+    <row label="r28">Memphis</row>
+    <row label="r29">Louisville</row>
+    <row label="r30">Milwaukee</row>
+    <row label="r31">Baltimore</row>
+    <row label="r32">Albuquerque</row>
+    <row label="r33">Tucson</row>
+    <row label="r34">Atlanta</row>
+    <row label="r35">Kansas City</row>
+    <row label="r36">Raleigh</row>
+    <row label="r37">Miami</row>
+    <row label="r38">Virginia Beach</row>
+    <row label="r39">Minneapolis</row>
+    <row label="r40">Oakland</row>
+    <row label="r41">Tampa, FL</row>
+    <row label="r42">Tulsa</row>
+    <row label="r43">Wichita</row>
+    <row label="r44">New Orleans</row>
+    <row label="r45">Cleveland</row>
+    <row label="r46">Anaheim</row>
+    <row label="r47">Honolulu</row>
+    <row label="r48">Lexington</row>
+    <row label="r49">Cincinnati</row>
+    <row label="r50">Pittsburgh</row>
+    <row label="r51">St. Louis</row>
+    <row label="r53">Anchorage, Alaska</row>
+    <row label="r54">Clearwater - St. Petersburg, FL</row>
+    <row label="r55">Madison, WI</row>
+    <row label="r56">Reno, NV</row>
+    <row label="r57">Buffalo-Niagara area (New York State)</row>
+    <row label="r58">St. Augustine, Florida</row>
+    <row label="r59">Atlantic City, NJ</row>
+    <row label="r60">Salt Lake City, UT</row>
+    <row label="r62">Winston-Salem, NC</row>
+    <row label="r63">Billings, Montana</row>
+    <row label="r64">Bozeman, Montana</row>
+    <row label="r65">Rapid City/Black Hills/Badlands area, (South Dakota)</row>
+    <row label="r66">Cheyenne, WY</row>
+    <row label="r67">Sioux Falls, SD</row>
+    <row label="r68">Des Moines, IA</row>
+  </checkbox>
+  <checkbox label="Q434" colLegendRows="20,40" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}">
+    <title>&lt;strong&gt;Which of these Canadian destinations have you visited in the &lt;u&gt;PAST 12 MONTHS&lt;/u&gt; and which will you be likely to visit in the &lt;u&gt;NEXT 12 MONTHS&lt;/u&gt;?&lt;/strong&gt;</title>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;&lt;/p&gt;</col>
+    <row label="r69">Toronto</row>
+    <row label="r70">Montreal</row>
+    <row label="r71">Vancouver</row>
+    <row label="r72">Calgary</row>
+    <row label="r73">Edmonton</row>
+    <row label="r74">Ottawa&#8211;Gatineau</row>
+    <row label="r75">Winnipeg</row>
+    <row label="r76">Quebec City</row>
+    <row label="r77">Halifax</row>
+    <row label="r78">Windsor</row>
+    <row label="r79">Saskatoon</row>
+  </checkbox>
+  <suspend/>
+  <radio label="Q420" optional="0" cond="(Q108.r9.c1)">
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <comment>Select one</comment>
+    <title>&lt;strong&gt;Were any of your recent trips to San Antonio for a &lt;u&gt;CONVENTION&lt;/u&gt; or &lt;u&gt;SPORTING EVENT&lt;/u&gt;?&lt;/strong&gt;</title>
+  </radio>
+  <suspend/>
+  <radio optional="0" label="Q421" cond="condition.SAN_ANTONIO_CONV_TRIP">
+    <row label="r1">Much more interested</row>
+    <row label="r2">More interested</row>
+    <row label="r3">Neutral (my feelings are unchanged)</row>
+    <row label="r4">Less interested</row>
+    <row label="r5">Much less interested</row>
+    <comment>Select one to complete the sentence.</comment>
+    <title>&lt;p&gt;&lt;strong&gt;Reflecting on your recent convention or sporting event trip(s) to San Antonio, how has your experience on this trip(s) influenced your interest in visiting San Antonio again?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&#8220;My experience in San Antonio on this trip(s) makes me ____________ to visit again&#8221;&lt;/strong&gt;&lt;/p&gt;</title>
+  </radio>
+  <suspend/>
+  <checkbox label="Q113" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="8,16" atleast="0" shuffle="rows">
+    <title>&lt;strong&gt;Which of these islands/beach destinations have you visited in the PAST TWO (2) YEARS and which will you be likely to visit in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+    <row label="r1" randomize="0">Puerto Rico</row>
+    <row label="r2" randomize="0">The U.S. Virgin Islands</row>
+    <row label="r3" randomize="0">British Virgin Islands</row>
+    <row label="r4" randomize="0">The Florida Keys</row>
+    <row label="r6" randomize="0">Jamaica</row>
+    <row label="r30" randomize="0">Cancun, Mexico</row>
+    <row label="r18" randomize="0">Cozumel, Mexico</row>
+    <row label="r31" randomize="0">Los Cabos, Mexico (Cabo San Lucas/San Jos&#233; del Cabo area)</row>
+    <row label="r10" randomize="0">Bermuda</row>
+    <row label="r5">Cuba</row>
+    <row label="r7">Aruba</row>
+    <row label="r8">Dominican Republic</row>
+    <row label="r9">The Bahamas</row>
+    <row label="r21">Turks and Caicos</row>
+    <row label="r11">The Cayman Islands</row>
+    <row label="r12">Barbados</row>
+    <row label="r14">Bali - Indonesia</row>
+    <row label="r16">The Seychelles Islands</row>
+    <row label="r17">The Maldives</row>
+    <row label="r19">The Azores</row>
+    <row label="r20">The Greek Islands (Rhodes, Santorini, Mykonos, etc.)</row>
+    <row label="r22">Fiji</row>
+    <row label="r23">Tahiti - French Polynesia</row>
+    <row label="r24">Balearic Islands (Mallorca, Menorca, Ibiza or Formentera)</row>
+    <row label="r25">St. Lucia</row>
+    <row label="r28">St. Martin</row>
+    <row label="r32">Mauritius</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWO (2) YEARS&lt;/strong&gt;</col>
+    <col label="c2">&lt;strong&gt;I am likely to visit in the NEXT TWO (2) YEARS&lt;/strong&gt;</col>
+  </checkbox>
+  <checkbox label="Q110" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10,20">
+    <title>&lt;strong&gt;Which of these&amp;nbsp;&lt;u&gt;COASTAL OR BEACH DESTINATIONS&lt;/u&gt; have you visited in the PAST 12 MONTHS and which will you be likely to visit in the NEXT 12&amp;nbsp;MONTHS?&lt;/strong&gt;</title>
+    <row label="r1">Florida panhandle&amp;nbsp;(Pensacola, Destin, Panama City, etc.)</row>
+    <row label="r2">Santa Barbara, California</row>
+    <row label="r3">Newport Beach, CA</row>
+    <row label="r4">Laguna Beach, CA</row>
+    <row label="r5">Mendocino, CA</row>
+    <row label="r6">Monterey/Big Sur area, CA</row>
+    <row label="r7">Oceanside/Carlsbad, CA</row>
+    <row label="r8">Coos Bay/the Southern Oregon coast</row>
+    <row label="r9">Myrtle Beach, SC</row>
+    <row label="r10">Hilton Head, SC</row>
+    <row label="r16">Gulf Shores/Orange Beach, AL</row>
+    <row label="r13" randomize="0">The Hamptons, NY</row>
+    <row label="r20" randomize="0">Nassau County (Long Island, NY)</row>
+    <row label="r11" randomize="0">The Jersey Shore (Perth Amboy to&amp;nbsp;Cape May)</row>
+    <row label="r17" randomize="0">Padre Island/Corpus Christi area</row>
+    <row label="r18" randomize="0">South Padre Island/Port Isabel area</row>
+    <row label="r21" randomize="0">Galveston, TX</row>
+    <row label="r12">The Outer Banks, NC</row>
+    <row label="r14">Martha's Vineyard, MA</row>
+    <row label="r15">Nantucket, MA</row>
+    <row label="r19">Virginia Beach, VA</row>
+    <row label="r22">Huntington Beach, CA</row>
+    <row label="r23">Wilmington, NC &amp;amp; its beaches</row>
+    <row label="r24">Ocean City, MD</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <checkbox label="Q111" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10">
+    <title>&lt;strong&gt;Which of these &lt;u&gt;LAKE DESTINATIONS&lt;/u&gt; have you visited in the PAST 12 MONTHS and which will you be likely to visit in the NEXT 12 MONTHS?&lt;/strong&gt;</title>
+    <row label="r1">Lake Tahoe, CA-NV</row>
+    <row label="r2">Michigan's Upper Peninsula</row>
+    <row label="r3">Grand Haven - Muskegon area, MI</row>
+    <row label="r4">South Haven, MI</row>
+    <row label="r5">Traverse City area, MI</row>
+    <row label="r6">Holland, MI</row>
+    <row label="r7">Mackinac Island, MI</row>
+    <row label="r21">Great Lakes Bay Area (Saginaw, Michigan &amp;amp; Saginaw Bay area)</row>
+    <row label="r8">Door County, WI</row>
+    <row label="r9">Port Wing, WI</row>
+    <row label="r10">Lake Geneva, WI</row>
+    <row label="r11">Lake Champlain, NY and VT</row>
+    <row label="r12">Lake Winnebago, WI</row>
+    <row label="r13">Lake Powell, UT and AZ</row>
+    <row label="r14">Lake Havasu, AZ</row>
+    <row label="r15">Table Rock, MO</row>
+    <row label="r16">Lake Chelan, WA</row>
+    <row label="r17">Lake Charles, LA</row>
+    <row label="r18">Lake Washington, WA</row>
+    <row label="r19">Lake of the Ozarks, MO</row>
+    <row label="r20">Flathead Lake, MT</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <checkbox label="Q112" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10">
+    <title>&lt;strong&gt;Which of these &lt;u&gt;WINE COUNTRY REGIONS&lt;/u&gt; have you visited in the PAST 12 MONTHS and which will you be likely to visit in the NEXT 12 MONTHS?&lt;/strong&gt;</title>
+    <row label="r1">Napa Valley, California</row>
+    <row label="r2">Sonoma County, California</row>
+    <row label="r3">Paso Robles, California</row>
+    <row label="r4">Lodi, California</row>
+    <row label="r5">Palisade, Colorado</row>
+    <row label="r6">Snake River Valley, Idaho</row>
+    <row label="r7">Willamette Valley, Oregon</row>
+    <row label="r8">Albuquerque, New Mexico</row>
+    <row label="r9">Finger Lakes, New York</row>
+    <row label="r10">North Fork, Long Island, New York</row>
+    <row label="r11">Fredericksburg, Texas</row>
+    <row label="r12">Loudoun County (Leesburg) , Virginia</row>
+    <row label="r13">Santa Ynez Valley, California</row>
+    <row label="r14">Sedona (Verde Valley), Arizona</row>
+    <row label="r15">Temecula, California</row>
+    <row label="r16">Woodinville, Washington</row>
+    <row label="r17">Walla Walla, Washington</row>
+    <row label="r18">Yakima Valley. Washington</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWELVE (12) MONTHS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWELVE (12) MONTHS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <checkbox label="Q114" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10">
+    <title>&lt;strong&gt;Which of these countries have you visited in the PAST TWO (2) YEARS and which will you be likely to visit in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+    <row label="r1" randomize="0">Canada</row>
+    <row label="r2" randomize="0">Mexico</row>
+    <row label="r3">Costa Rica</row>
+    <row label="r4">Belize</row>
+    <row label="r5">Guatemala</row>
+    <row label="r6">Honduras</row>
+    <row label="r7">Nicaragua</row>
+    <row label="r8">El Salvador</row>
+    <row label="r9">Panama</row>
+    <row label="r10">Colombia</row>
+    <row label="r11">Peru</row>
+    <row label="r12">Brazil</row>
+    <row label="r13">Chile</row>
+    <row label="r14">Argentina</row>
+    <row label="r15">Ecuador</row>
+    <row label="r16">Bolivia</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWO (2) YEARS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWO (2) YEARS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <checkbox label="Q116" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}">
+    <title>&lt;strong&gt;Which of these countries have you visited in the PAST TWO (2) YEARS and which will you be likely to visit in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+    <row label="r1">Japan</row>
+    <row label="r2">China</row>
+    <row label="r3">South Korea</row>
+    <row label="r4">The Philippines</row>
+    <row label="r5">Vietnam</row>
+    <row label="r6">Thailand</row>
+    <row label="r7">Malaysia</row>
+    <row label="r8">India</row>
+    <row label="r9">Australia</row>
+    <row label="r10">New Zealand</row>
+    <row label="r13">Singapore&amp;nbsp;</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWO (2) YEARS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWO (2) YEARS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <checkbox label="Q117" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" colLegendRows="10,20">
+    <title>&lt;strong&gt;Which of these countries have you visited in the PAST TWO (2) YEARS and which will you be likely to visit in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+    <row label="r1">Russia</row>
+    <row label="r2">France</row>
+    <row label="r3">Ukraine</row>
+    <row label="r4">Spain</row>
+    <row label="r5">Sweden</row>
+    <row label="r6">Germany</row>
+    <row label="r7">Finland</row>
+    <row label="r8">Norway</row>
+    <row label="r9">Poland</row>
+    <row label="r10">Italy</row>
+    <row label="r11">United Kingdom</row>
+    <row label="r12">Romania</row>
+    <row label="r13">Greece</row>
+    <row label="r14">Bulgaria</row>
+    <row label="r15">Iceland</row>
+    <row label="r16">Hungary</row>
+    <row label="r17">Portugal</row>
+    <row label="r18">Austria</row>
+    <row label="r19">Czechia</row>
+    <row label="r20">Serbia</row>
+    <row label="r21">Ireland</row>
+    <row label="r22">Lithuania</row>
+    <row label="r23">Latvia</row>
+    <row label="r24">Croatia</row>
+    <row label="r25">Bosnia and Herzegovina</row>
+    <row label="r26">Estonia</row>
+    <row label="r27">Denmark</row>
+    <row label="r28">Netherlands</row>
+    <row label="r29">Switzerland</row>
+    <row label="r30">Belgium</row>
+    <row label="r31">Monaco</row>
+    <col label="c1">&lt;strong&gt;I have visited in the PAST TWO (2) YEARS&lt;/strong&gt;</col>
+    <col label="c2">&lt;p&gt;&lt;strong&gt;I am likely to visit in the NEXT TWO (2) YEARS&lt;/strong&gt;&lt;/p&gt;</col>
+  </checkbox>
+  <suspend/>
+  <radio label="Q149">
+    <title>&lt;strong&gt;Do you consume cannabis or cannabis-derived products?&amp;nbsp;&lt;/strong&gt;</title>
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <row label="r3">I prefer not to say</row>
+  </radio>
+  <radio label="Q151">
+    <title>&lt;strong&gt;In recent years,&amp;nbsp;"&lt;u&gt;psychedelic tourism&lt;/u&gt;" is reported to have increased in popularity.&amp;nbsp; &lt;br&gt;&lt;br&gt;Psychedelic tourism is traveling to explore the use of drugs such as ayahuasca, psilocybin (magic mushrooms), etc.&lt;br&gt;&lt;br&gt;How interested would you be in this type of travel?&lt;/strong&gt;</title>
+    <row label="r1">Very interested</row>
+    <row label="r2">Interested</row>
+    <row label="r3">Neutral (neither interested nor uninterested)</row>
+    <row label="r4">Uninterested</row>
+    <row label="r5">Very uninterested</row>
+  </radio>
+  <radio optional="0" label="Q205">
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <comment>Select one</comment>
+    <title>&lt;strong&gt;Have you ever received a tattoo(s) specifically to commemorate, celebrate or dream about a travel experience?&lt;/strong&gt;</title>
+  </radio>
+  <suspend/>
+  <quota label="quo1" overquota="noqual" sheet="D Apollo Destination 1"/>
+  <quota label="quo2" overquota="noqual" sheet="D Apollo State 1"/>
+  <suspend/>
+  <loop label="L2" vars="ApolloDestination">
+    <title>Loop Destinations</title>
+    <block label="b6" builder:title="default loop block">
+      <block label="b3_[loopvar: label]" builder:title="Apollo Destination Block" randomize="0">
+        <radio label="Q208_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;&lt;span style="color: #003366;"&gt;The questions on this page will be about [loopvar: ApolloDestination].&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;&lt;span style="color: #003366;"&gt;How many times have you visited [loopvar: ApolloDestination] on a leisure trip in the PAST TWO (2) YEARS?&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Zero</row>
+          <row label="r2">1</row>
+          <row label="r3">2</row>
+          <row label="r4">3-5</row>
+          <row label="r5">6-9</row>
+          <row label="r6">10 or more</row>
+        </radio>
+        <radio label="Q209_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How familiar are you with the things for visitors to see and do in [loopvar: ApolloDestination]?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely familiar</row>
+          <row label="r2">Familiar</row>
+          <row label="r3">Slightly familiar</row>
+          <row label="r4">Neutral (neither familiar nor unfamiliar)</row>
+          <row label="r5">Slightly unfamiliar</row>
+          <row label="r6">Unfamiliar</row>
+          <row label="r7">Totally unfamiliar</row>
+        </radio>
+        <radio label="Q210_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How likely are you to visit [loopvar: ApolloDestination] for leisure in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely likely</row>
+          <row label="r2">Likely</row>
+          <row label="r3">Slightly likely</row>
+          <row label="r4">Neutral (neither likely nor unlikely)</row>
+          <row label="r5">Slightly unlikely</row>
+          <row label="r6">Unlikely</row>
+          <row label="r7">Extremely unlikely</row>
+        </radio>
+        <radio label="Q211_[loopvar: label]" builderHint="{&quot;rocochoName&quot;:&quot;radiogrid&quot;}" colLegendRows="6,12,18,24" optional="0" randomize="0" shuffle="rows">
+          <title>&lt;p&gt;&lt;strong&gt;Please think about [loopvar: ApolloDestination] as a place to visit for leisure.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Given what you currently know about [loopvar: ApolloDestination], please rate the destination for each of these attributes. &lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one for each option</comment>
+          <row label="r1">Museums</row>
+          <row label="r2">Performing arts</row>
+          <row label="r3">Sporting events</row>
+          <row label="r4">Theme parks</row>
+          <row label="r5">Festivals and special events</row>
+          <row label="r6">Historically interesting</row>
+          <row label="r7">Family friendly</row>
+          <row label="r8">Food &amp;amp; cuisine</row>
+          <row label="r9">Overall diversity (in people, experiences, things to do, etc.)</row>
+          <row label="r10">Scenic beauty</row>
+          <row label="r11">Shopping</row>
+          <row label="r12">A place for life changing experiences</row>
+          <row label="r13">New experiences</row>
+          <row label="r14">Experiences worth sharing on social media</row>
+          <row label="r15">Bucket list experiences</row>
+          <row label="r16">Fun atmosphere</row>
+          <row label="r17">A place to escape</row>
+          <row label="r18">Relaxation</row>
+          <row label="r19">Romance</row>
+          <row label="r20">Safety</row>
+          <row label="r21">Exploration</row>
+          <row label="r22">Excitement</row>
+          <row label="r23">Easy to get to</row>
+          <row label="r24">Welcoming atmosphere</row>
+          <row label="r25">Interesting neighborhoods</row>
+          <row label="r26">Easy to get around</row>
+          <row label="r27">Weather</row>
+          <col label="c1">Extremely good</col>
+          <col label="c2">Good</col>
+          <col label="c3">Slightly good</col>
+          <col label="c4">Neutral &#8211; neither good nor poor</col>
+          <col label="c5">Slightly poor</col>
+          <col label="c6">Poor</col>
+          <col label="c7">Extremely poor</col>
+        </radio>
+        <radio label="Q212_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In your opinion, how appealing is [loopvar: ApolloDestination] as a place to visit for &lt;u&gt;LEISURE TRAVEL&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q213_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How appealing would you find [loopvar: ApolloDestination] to be as a place to visit for &lt;u&gt;CONVENTIONS, CONFERENCES OR GROUP MEETINGS&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q214_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;In the last few years, has [loopvar: ApolloDestination]'s &lt;u&gt;popularity&lt;/u&gt; as a place to visit changed? (Select one to complete the sentence)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;From what I have seen, [loopvar: ApolloDestination] is becoming_______________&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Much more popular</row>
+          <row label="r2">More popular</row>
+          <row label="r3">Slightly more popular</row>
+          <row label="r4">Unchanged (neither more nor less popular)</row>
+          <row label="r5">Slightly less popular</row>
+          <row label="r6">Less popular</row>
+          <row label="r7">Much less popular</row>
+          <row label="r8">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q215_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Please think about the experiences a traveler can have in [loopvar: ApolloDestination] and compare that to other destinations. Use the scale below to rate &lt;u&gt;HOW UNIQUE THESE EXPERIENCES ARE&lt;/u&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;The experiences a visitor can have in [loopvar: ApolloDestination] are ______________.&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; EXTREMELY UNIQUE</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 - NOT AT ALL UNIQUE</row>
+        </radio>
+        <radio label="Q216_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;Given what you know about [loopvar: ApolloDestination], &lt;u&gt;HOW WELCOMING&lt;/u&gt; would you expect the residents there to be to people like yourself?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Very welcoming</row>
+          <row label="r2">Welcoming</row>
+          <row label="r3">Slightly welcoming</row>
+          <row label="r4">Neutral (neither welcoming nor unwelcoming)</row>
+          <row label="r5">Slightly unwelcoming</row>
+          <row label="r6">Unwelcoming</row>
+          <row label="r7">Very unwelcoming</row>
+        </radio>
+        <radio label="Q217_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Using what you already know&#8230;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you were giving [loopvar: ApolloDestination] an &lt;u&gt;OVERALL GRADE&lt;/u&gt; as a tourist destination, what would it be?&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">A+</row>
+          <row label="r2">A</row>
+          <row label="r3">A-</row>
+          <row label="r4">B+</row>
+          <row label="r5">B</row>
+          <row label="r6">B-</row>
+          <row label="r7">C+</row>
+          <row label="r8">C</row>
+          <row label="r9">C-</row>
+          <row label="r10">D+</row>
+          <row label="r11">D</row>
+          <row label="r12">D-</row>
+          <row label="r13">F</row>
+        </radio>
+        <radio label="Q218_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;How motivated are you to take a leisure trip to [loopvar: ApolloDestination] in the NEXT TWELVE (12) MONTHS? &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(Please use the 0-10 point scale below to describe your level of motivation)&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; HIGHLY MOTIVATED</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 - NOT AT ALL MOTIVATED</row>
+        </radio>
+        <radio label="Q219_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall seeing any advertisements for [loopvar: ApolloDestination] as a place to visit?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q220_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall seeing any articles, stories or blogs written (in print or online) about [loopvar: ApolloDestination] as a place to visit?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q221_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall anyone (friends, relatives, celebrities, digital influencers, etc.) talking about [loopvar: ApolloDestination] as a place to visit?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;(Please include both in-person and online conversations such as on social media)&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q222_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;How much do you agree with the following statement?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Overall, when people talk about [loopvar: ApolloDestination], they generally say positive things.&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Strongly agree</row>
+          <row label="r2">Agree</row>
+          <row label="r3">Neutral</row>
+          <row label="r4">Disagree</row>
+          <row label="r5">Strongly disagree</row>
+        </radio>
+        <radio label="Q223_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;Given what you currently know, how appealing is [loopvar: ApolloDestination] as &lt;u&gt;A PLACE TO LIVE&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q224_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Note: In the following question accessibility refers to a destination that is easy to enjoy or participate fully in, and/or experience safely and with dignity by a person with a disability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Overall, &lt;u&gt;HOW ACCESSIBLE&lt;/u&gt; do you feel the experiences in&amp;nbsp;[loopvar: ApolloDestination] would be to you and the people you regularly travel with? &lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; Far above average accessibility</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5 &#8211; Average accessibility</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 &#8211; Far below average accessibility</row>
+        </radio>
+        <suspend/>
+        <checkbox label="Q225_[loopvar: label]" cond="(Q210_[loopvar: label].r5 or Q210_[loopvar: label].r6 or Q210_[loopvar: label].r7)" atleast="1" optional="0" randomize="0" shuffle="rows">
+          <title>&lt;strong&gt;Which of the following accurately describe why you said you&#8217;re &lt;u&gt;unlikely&lt;/u&gt; to visit [loopvar: ApolloDestination] in the NEXT TWO 2 YEARS?&lt;/strong&gt;</title>
+          <comment>Select all that apply</comment>
+          <row label="r1">I&#8217;ve been there, done that</row>
+          <row label="r2">Homelessness/urban grit</row>
+          <row label="r3">I don&#8217;t know enough about the destination</row>
+          <row label="r13">The destination is not safe</row>
+          <row label="r4">I&#8217;ve heard bad things about it</row>
+          <row label="r5">It&#8217;s too expensive</row>
+          <row label="r6">Over-tourism (there are too many tourists there)</row>
+          <row label="r7">It&#8217;s too far away/too hard to get to</row>
+          <row label="r8">Other destinations are more attractive</row>
+          <row label="r9">I don't like the weather there</row>
+          <row label="r10">The destination is just not on my radar</row>
+          <row label="r11">I don&#8217;t like its politics</row>
+          <row label="r12" exclusive="1" randomize="0">NONE OF THESE</row>
+        </checkbox>
+      </block>
+    </block>
+    <looprow label="Lr1" cond="(condition.marker__Anaheim___Orange_County__California)">
+      <loopvar name="ApolloDestination">Anaheim - Orange County, California</loopvar>
+    </looprow>
+    <looprow label="Lr2" cond="(condition.marker__Anchorage__Alaska)">
+      <loopvar name="ApolloDestination">Anchorage, Alaska</loopvar>
+    </looprow>
+    <looprow label="Lr3" cond="(condition.marker__Atlanta__Georgia)">
+      <loopvar name="ApolloDestination">Atlanta, Georgia</loopvar>
+    </looprow>
+    <looprow label="Lr4" cond="(condition.marker__Atlantic_City__New_Jersey)">
+      <loopvar name="ApolloDestination">Atlantic City, New Jersey</loopvar>
+    </looprow>
+    <looprow label="Lr5" cond="(condition.marker__Austin__Texas)">
+      <loopvar name="ApolloDestination">Austin, Texas</loopvar>
+    </looprow>
+    <looprow label="Lr6" cond="(condition.marker__Baltimore__Maryland)">
+      <loopvar name="ApolloDestination">Baltimore, Maryland</loopvar>
+    </looprow>
+    <looprow label="Lr7" cond="(condition.marker__Boston__Massachusetts)">
+      <loopvar name="ApolloDestination">Boston, Massachusetts</loopvar>
+    </looprow>
+    <looprow label="Lr8" cond="(condition.marker__Buffalo_Niagara_area__NY)">
+      <loopvar name="ApolloDestination">Buffalo-Niagara area, NY</loopvar>
+    </looprow>
+    <looprow label="Lr9" cond="(condition.marker__Chicago__Illinois)">
+      <loopvar name="ApolloDestination">Chicago, Illinois</loopvar>
+    </looprow>
+    <looprow label="Lr10" cond="(condition.marker__Clearwater___St__Petersburg__Florida)">
+      <loopvar name="ApolloDestination">Clearwater - St. Petersburg, Florida</loopvar>
+    </looprow>
+    <looprow label="Lr11" cond="(condition.marker__Cleveland__Ohio)">
+      <loopvar name="ApolloDestination">Cleveland, Ohio</loopvar>
+    </looprow>
+    <looprow label="Lr12" cond="(condition.marker__Columbus__Ohio)">
+      <loopvar name="ApolloDestination">Columbus, Ohio</loopvar>
+    </looprow>
+    <looprow label="Lr13" cond="(condition.marker__Dallas__Texas)">
+      <loopvar name="ApolloDestination">Dallas, Texas</loopvar>
+    </looprow>
+    <looprow label="Lr14" cond="(condition.marker__Denver__Colorado)">
+      <loopvar name="ApolloDestination">Denver, Colorado</loopvar>
+    </looprow>
+    <looprow label="Lr15" cond="(condition.marker__Detroit__Michigan)">
+      <loopvar name="ApolloDestination">Detroit, Michigan</loopvar>
+    </looprow>
+    <looprow label="Lr16" cond="(condition.marker__Fort_Worth__Texas)">
+      <loopvar name="ApolloDestination">Fort Worth, Texas</loopvar>
+    </looprow>
+    <looprow label="Lr17" cond="(condition.marker__Houston__Texas)">
+      <loopvar name="ApolloDestination">Houston, Texas</loopvar>
+    </looprow>
+    <looprow label="Lr18" cond="(condition.marker__Las_Vegas__Nevada)">
+      <loopvar name="ApolloDestination">Las Vegas, Nevada</loopvar>
+    </looprow>
+    <looprow label="Lr19" cond="(condition.marker__Los_Angeles__California)">
+      <loopvar name="ApolloDestination">Los Angeles, California</loopvar>
+    </looprow>
+    <looprow label="Lr20" cond="(condition.marker__Louisville__Kentucky)">
+      <loopvar name="ApolloDestination">Louisville, Kentucky</loopvar>
+    </looprow>
+    <looprow label="Lr21" cond="(condition.marker__Memphis__Tennessee)">
+      <loopvar name="ApolloDestination">Memphis, Tennessee</loopvar>
+    </looprow>
+    <looprow label="Lr22" cond="(condition.marker__Miami__Florida)">
+      <loopvar name="ApolloDestination">Miami, Florida</loopvar>
+    </looprow>
+    <looprow label="Lr23" cond="(condition.marker__Minneapolis__Minnesota)">
+      <loopvar name="ApolloDestination">Minneapolis, Minnesota</loopvar>
+    </looprow>
+    <looprow label="Lr24" cond="(condition.marker__Nashville__Tennessee)">
+      <loopvar name="ApolloDestination">Nashville, Tennessee</loopvar>
+    </looprow>
+    <looprow label="Lr25" cond="(condition.marker__New_Orleans__Louisiana)">
+      <loopvar name="ApolloDestination">New Orleans, Louisiana</loopvar>
+    </looprow>
+    <looprow label="Lr26" cond="(condition.marker__New_York_City)">
+      <loopvar name="ApolloDestination">New York City</loopvar>
+    </looprow>
+    <looprow label="Lr27" cond="(condition.marker__Orlando__Florida)">
+      <loopvar name="ApolloDestination">Orlando, Florida</loopvar>
+    </looprow>
+    <looprow label="Lr28" cond="(condition.marker__Philadelphia__Pennsylvania)">
+      <loopvar name="ApolloDestination">Philadelphia, Pennsylvania</loopvar>
+    </looprow>
+    <looprow label="Lr29" cond="(condition.marker__Phoenix__Arizona)">
+      <loopvar name="ApolloDestination">Phoenix, Arizona</loopvar>
+    </looprow>
+    <looprow label="Lr30" cond="(condition.marker__Pittsburgh__Pennsylvania)">
+      <loopvar name="ApolloDestination">Pittsburgh, Pennsylvania</loopvar>
+    </looprow>
+    <looprow label="Lr31" cond="(condition.marker__Portland__Oregon)">
+      <loopvar name="ApolloDestination">Portland, Oregon</loopvar>
+    </looprow>
+    <looprow label="Lr32" cond="(condition.marker__Reno_Lake_Tahoe_area)">
+      <loopvar name="ApolloDestination">Reno-Lake Tahoe area</loopvar>
+    </looprow>
+    <looprow label="Lr33" cond="(condition.marker__San_Antonio__Texas)">
+      <loopvar name="ApolloDestination">San Antonio, Texas</loopvar>
+    </looprow>
+    <looprow label="Lr34" cond="(condition.marker__San_Diego__California)">
+      <loopvar name="ApolloDestination">San Diego, California</loopvar>
+    </looprow>
+    <looprow label="Lr35" cond="(condition.marker__San_Francisco__California)">
+      <loopvar name="ApolloDestination">San Francisco, California</loopvar>
+    </looprow>
+    <looprow label="Lr36" cond="(condition.marker__Santa_Barbara__California)">
+      <loopvar name="ApolloDestination">Santa Barbara, California</loopvar>
+    </looprow>
+    <looprow label="Lr37" cond="(condition.marker__Seattle__Washington)">
+      <loopvar name="ApolloDestination">Seattle, Washington</loopvar>
+    </looprow>
+    <looprow label="Lr38" cond="(condition.marker__Washington_DC)">
+      <loopvar name="ApolloDestination">Washington DC</loopvar>
+    </looprow>
+    <looprow label="Lr39" cond="(condition.marker__Puerto_Rico)">
+      <loopvar name="ApolloDestination">Puerto Rico</loopvar>
+    </looprow>
+    <looprow label="Lr40" cond="(condition.marker__The_U_S__Virgin_Islands)">
+      <loopvar name="ApolloDestination">The U.S. Virgin Islands</loopvar>
+    </looprow>
+    <looprow label="Lr41" cond="(condition.marker__the_British_Virgin_Islands)">
+      <loopvar name="ApolloDestination">the British Virgin Islands</loopvar>
+    </looprow>
+    <looprow label="Lr42" cond="(condition.marker__the_Florida_Keys)">
+      <loopvar name="ApolloDestination">the Florida Keys</loopvar>
+    </looprow>
+    <looprow label="Lr43" cond="(condition.marker__Cuba)">
+      <loopvar name="ApolloDestination">Cuba</loopvar>
+    </looprow>
+    <looprow label="Lr44" cond="(condition.marker__Jamaica)">
+      <loopvar name="ApolloDestination">Jamaica</loopvar>
+    </looprow>
+    <looprow label="Lr45" cond="(condition.marker__Aruba)">
+      <loopvar name="ApolloDestination">Aruba</loopvar>
+    </looprow>
+    <looprow label="Lr46" cond="(condition.marker__the_Dominican_Republic)">
+      <loopvar name="ApolloDestination">the Dominican Republic</loopvar>
+    </looprow>
+    <looprow label="Lr47" cond="(condition.marker__the_Bahamas)">
+      <loopvar name="ApolloDestination">the Bahamas</loopvar>
+    </looprow>
+    <looprow label="Lr48" cond="(condition.marker__Bermuda)">
+      <loopvar name="ApolloDestination">Bermuda</loopvar>
+    </looprow>
+    <looprow label="Lr49" cond="(condition.marker__the_Cayman_Islands)">
+      <loopvar name="ApolloDestination">the Cayman Islands</loopvar>
+    </looprow>
+    <looprow label="Lr50" cond="(condition.marker__Nassau_County__Long_Island__NY)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;Nassau County (Long Island, NY)&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr51" cond="(condition.marker__Charlotte__NC)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;Charlotte, NC&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr52" cond="(condition.marker__Republic_of_Fiji)">
+      <loopvar name="ApolloDestination">Republic of Fiji</loopvar>
+    </looprow>
+    <looprow label="Lr53" cond="(condition.marker__Bali_Indonesia)">
+      <loopvar name="ApolloDestination">Bali - Indonesia</loopvar>
+    </looprow>
+    <looprow label="Lr54" cond="(condition.marker__Tahiti_French_Polynesia)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;Tahiti - French Polynesia&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr55" cond="(condition.marker__The_Seychelles_Islands)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;The Seychelles Islands&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr56" cond="(condition.marker__The_Maldives)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;The Maldives&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr57" cond="(condition.marker__Cozumel_Mexico)">
+      <loopvar name="ApolloDestination">&lt;span style="color: #1d1c1d;" jstcache="0"&gt;Cozumel, Mexico&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr58" cond="(condition.marker__Billings_Montana)">
+      <loopvar name="ApolloDestination">Billings, Montana</loopvar>
+    </looprow>
+    <looprow label="Lr59" cond="(condition.marker__Bozeman_Montana)">
+      <loopvar name="ApolloDestination">Bozeman, Montana</loopvar>
+    </looprow>
+    <looprow label="Lr60" cond="(condition.marker__Rapid_City_Black_Hills_area_South_Dakota)">
+      <loopvar name="ApolloDestination">Rapid City/Black Hills area, South Dakota</loopvar>
+    </looprow>
+    <looprow label="Lr61" cond="(condition.marker__Cincinnati_OH)">
+      <loopvar name="ApolloDestination">&lt;span style="font-variant-ligatures: common-ligatures; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;Cincinnati, Ohio&lt;/span&gt;</loopvar>
+    </looprow>
+    <looprow label="Lr62" cond="(condition.marker__St_Louis_MO)">
+      <loopvar name="ApolloDestination">St. Louis, Missouri</loopvar>
+    </looprow>
+    <looprow label="Lr63" cond="(condition.marker__Oklahoma_City)">
+      <loopvar name="ApolloDestination">Oklahoma City, Oklahoma</loopvar>
+    </looprow>
+    <looprow label="Lr64" cond="(condition.marker__Toronto_Ontario)">
+      <loopvar name="ApolloDestination">Toronto, Ontario</loopvar>
+    </looprow>
+    <looprow label="Lr65" cond="(condition.marker__Montreal_Quebec)">
+      <loopvar name="ApolloDestination">Montreal, Quebec</loopvar>
+    </looprow>
+    <looprow label="Lr66" cond="(condition.marker__Vancouver_British_Columbia)">
+      <loopvar name="ApolloDestination">Vancouver, British Columbia</loopvar>
+    </looprow>
+    <looprow label="Lr67" cond="(condition.marker__Mexico_City_Mexico)">
+      <loopvar name="ApolloDestination">Mexico City, Mexico</loopvar>
+    </looprow>
+    <looprow label="Lr68" cond="(condition.marker__Cancun_Mexico)">
+      <loopvar name="ApolloDestination">Cancun, Mexico</loopvar>
+    </looprow>
+    <looprow label="Lr69" cond="(condition.marker__Los_Cabos_Mexico)">
+      <loopvar name="ApolloDestination">Los Cabos, Mexico</loopvar>
+    </looprow>
+  </loop>
+  <suspend/>
+  <loop label="L3" vars="ApolloState">
+    <title>Loop States</title>
+    <block label="b7" builder:title="default loop block">
+      <block label="b8_[loopvar: label]" builder:title="Apollo States Block" randomize="0">
+        <radio label="Q276_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;&lt;span style="color: #003366;"&gt;The questions on this page will be about [loopvar: ApolloState].&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;&lt;span style="color: #003366;"&gt;How many times have you visited [loopvar: ApolloState] on a leisure trip in the PAST TWO (2) YEARS?&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Zero</row>
+          <row label="r2">1</row>
+          <row label="r3">2</row>
+          <row label="r4">3-5</row>
+          <row label="r5">6-9</row>
+          <row label="r6">10 or more</row>
+        </radio>
+        <radio label="Q277_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How familiar are you with the things for visitors to see and do in &lt;span style="color: #003366;"&gt;[loopvar: ApolloState]&lt;/span&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely familiar</row>
+          <row label="r2">Familiar</row>
+          <row label="r3">Slightly familiar</row>
+          <row label="r4">Neutral (neither familiar nor unfamiliar)</row>
+          <row label="r5">Slightly unfamiliar</row>
+          <row label="r6">Unfamiliar</row>
+          <row label="r7">Totally unfamiliar</row>
+        </radio>
+        <radio label="Q278_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How likely are you to visit &lt;span style="color: #003366;"&gt;[loopvar: ApolloState]&lt;/span&gt; for leisure in the NEXT TWO (2) YEARS?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely likely</row>
+          <row label="r2">Likely</row>
+          <row label="r3">Slightly likely</row>
+          <row label="r4">Neutral (neither likely nor unlikely)</row>
+          <row label="r5">Slightly unlikely</row>
+          <row label="r6">Unlikely</row>
+          <row label="r7">Extremely unlikely</row>
+        </radio>
+        <radio label="Q279_[loopvar: label]" builderHint="{&quot;rocochoName&quot;:&quot;radiogrid&quot;}" colLegendRows="6,12,18,24" optional="0" randomize="0" shuffle="rows">
+          <title>&lt;p&gt;&lt;strong&gt;Please think about &lt;span style="color: #003366;"&gt;[loopvar: ApolloState]&lt;/span&gt; as a place to visit for leisure.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Given what you currently know about &lt;span style="color: #003366;"&gt;[loopvar: ApolloState]&lt;/span&gt;, please rate the destination for each of these attributes. &lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one for each option</comment>
+          <row label="r1">Museums</row>
+          <row label="r2">Performing arts</row>
+          <row label="r3">Sporting events</row>
+          <row label="r4">Theme parks</row>
+          <row label="r5">Festivals and special events</row>
+          <row label="r6">Historically interesting</row>
+          <row label="r7">Family friendly</row>
+          <row label="r8">Food &amp;amp; cuisine</row>
+          <row label="r9">Overall diversity (in people, experiences, things to do, etc.)</row>
+          <row label="r10">Scenic beauty</row>
+          <row label="r11">Shopping</row>
+          <row label="r12">A place for life changing experiences</row>
+          <row label="r13">New experiences</row>
+          <row label="r14">Experiences worth sharing on social media</row>
+          <row label="r15">Bucket list experiences</row>
+          <row label="r16">Fun atmosphere</row>
+          <row label="r17">A place to escape</row>
+          <row label="r18">Relaxation</row>
+          <row label="r19">Romance</row>
+          <row label="r20">Safety</row>
+          <row label="r21">Exploration</row>
+          <row label="r22">Excitement</row>
+          <row label="r23">Easy to get to</row>
+          <row label="r24">Welcoming atmosphere</row>
+          <row label="r25">Interesting neighborhoods</row>
+          <row label="r26">Easy to get around</row>
+          <row label="r27">Weather</row>
+          <col label="c1">Extremely good</col>
+          <col label="c2">Good</col>
+          <col label="c3">Slightly good</col>
+          <col label="c4">Neutral &#8211; neither good nor poor</col>
+          <col label="c5">Slightly poor</col>
+          <col label="c6">Poor</col>
+          <col label="c7">Extremely poor</col>
+        </radio>
+        <radio label="Q280_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In your opinion, how appealing is &lt;span style="color: #003366;"&gt;[loopvar: ApolloState]&lt;/span&gt; as a place to visit for &lt;u&gt;LEISURE TRAVEL&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q281_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;How appealing would you find&amp;nbsp;[loopvar: ApolloState] to be as a place to visit for &lt;u&gt;CONVENTIONS, CONFERENCES OR GROUP MEETINGS&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q282_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;In the last few years, has [loopvar: ApolloState]'s &lt;u&gt;popularity&lt;/u&gt; as a place to visit changed? (Select one to complete the sentence)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;From what I have seen, [loopvar: ApolloState] is becoming_______________&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Much more popular</row>
+          <row label="r2">More popular</row>
+          <row label="r3">Slightly more popular</row>
+          <row label="r4">Unchanged (neither more nor less popular)</row>
+          <row label="r5">Slightly less popular</row>
+          <row label="r6">Less popular</row>
+          <row label="r7">Much less popular</row>
+          <row label="r8">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q283_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Please think about the experiences a traveler can have in [loopvar: ApolloState] and compare that to other destinations. Use the scale below to rate &lt;u&gt;HOW UNIQUE THESE EXPERIENCES ARE&lt;/u&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;The experiences a visitor can have in [loopvar: ApolloState] are ______________.&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; EXTREMELY UNIQUE</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 - NOT AT ALL UNIQUE</row>
+        </radio>
+        <radio label="Q284_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;Given what you know about [loopvar: ApolloState], &lt;u&gt;HOW WELCOMING&lt;/u&gt; would you expect the residents there to be to people like yourself?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Very welcoming</row>
+          <row label="r2">Welcoming</row>
+          <row label="r3">Slightly welcoming</row>
+          <row label="r4">Neutral (neither welcoming nor unwelcoming)</row>
+          <row label="r5">Slightly unwelcoming</row>
+          <row label="r6">Unwelcoming</row>
+          <row label="r7">Very unwelcoming</row>
+        </radio>
+        <radio label="Q285_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Using what you already know&#8230;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you were giving [loopvar: ApolloState] an &lt;u&gt;OVERALL GRADE&lt;/u&gt; as a tourist destination, what would it be?&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">A+</row>
+          <row label="r2">A</row>
+          <row label="r3">A-</row>
+          <row label="r4">B+</row>
+          <row label="r5">B</row>
+          <row label="r6">B-</row>
+          <row label="r7">C+</row>
+          <row label="r8">C</row>
+          <row label="r9">C-</row>
+          <row label="r10">D+</row>
+          <row label="r11">D</row>
+          <row label="r12">D-</row>
+          <row label="r13">F</row>
+        </radio>
+        <radio label="Q286_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;How motivated are you to take a leisure trip to [loopvar: ApolloState] in the NEXT TWELVE (12) MONTHS? &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(Please use the 0-10 point scale below to describe your level of motivation)&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; HIGHLY MOTIVATED</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 - NOT AT ALL MOTIVATED</row>
+        </radio>
+        <radio label="Q287_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall seeing any advertisements for [loopvar: ApolloState] as a place to visit?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q288_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall seeing any articles, stories or blogs written (in print or online) about [loopvar: ApolloState] as a place to visit?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q289_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;In the PAST TWELVE (12) MONTHS, do you recall anyone (friends, relatives, celebrities, digital influencers, etc.) talking about [loopvar: ApolloState] as a place to visit?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;(Please include both in-person and online conversations such as on social media)&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Yes</row>
+          <row label="r2">No</row>
+          <row label="r3">I don&#8217;t know</row>
+        </radio>
+        <radio label="Q290_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;How much do you agree with the following statement?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Overall, when people talk about [loopvar: ApolloState] they generally say positive things.&lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Strongly agree</row>
+          <row label="r2">Agree</row>
+          <row label="r3">Neutral</row>
+          <row label="r4">Disagree</row>
+          <row label="r5">Strongly disagree</row>
+        </radio>
+        <radio label="Q291_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;strong&gt;Given what you currently know, how appealing is [loopvar: ApolloState] as &lt;u&gt;A PLACE TO LIVE&lt;/u&gt;?&lt;/strong&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">Extremely appealing</row>
+          <row label="r2">Appealing</row>
+          <row label="r3">Slightly appealing</row>
+          <row label="r4">Neutral (neither appealing nor unappealing)</row>
+          <row label="r5">Slightly unappealing</row>
+          <row label="r6">Unappealing</row>
+          <row label="r7">Extremely unappealing</row>
+        </radio>
+        <radio label="Q292_[loopvar: label]" optional="0" randomize="0">
+          <title>&lt;p&gt;&lt;strong&gt;Note: In the following question accessibility refers to a destination that is easy to enjoy or participate fully in, and/or experience safely and with dignity by a person with a disability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Overall, &lt;u&gt;HOW ACCESSIBLE&lt;/u&gt; do you feel the experiences in [loopvar: ApolloState] would be to you and the people you regularly travel with? &lt;/strong&gt;&lt;/p&gt;</title>
+          <comment>Select one</comment>
+          <row label="r1">10 &#8211; Far above average accessibility</row>
+          <row label="r2">9</row>
+          <row label="r3">8</row>
+          <row label="r4">7</row>
+          <row label="r5">6</row>
+          <row label="r6">5 &#8211; Average accessibility</row>
+          <row label="r7">4</row>
+          <row label="r8">3</row>
+          <row label="r9">2</row>
+          <row label="r10">1</row>
+          <row label="r11">0 &#8211; Far below average accessibility</row>
+        </radio>
+        <suspend/>
+        <checkbox label="Q293_[loopvar: label]" cond="(Q278_[loopvar: label].r5 or Q278_[loopvar: label].r6 or Q278_[loopvar: label].r7)" atleast="1" optional="0" randomize="0" shuffle="rows">
+          <title>&lt;strong&gt;Which of the following accurately describe why you said you&#8217;re &lt;u&gt;unlikely&lt;/u&gt; to visit [loopvar: ApolloState] in the NEXT TWO 2 YEARS?&lt;/strong&gt;</title>
+          <comment>Select all that apply</comment>
+          <row label="r1">I&#8217;ve been there, done that</row>
+          <row label="r2">Homelessness/urban grit</row>
+          <row label="r3">I don&#8217;t know enough about the destination</row>
+          <row label="r13">The destination is not safe</row>
+          <row label="r4">I&#8217;ve heard bad things about it</row>
+          <row label="r5">It&#8217;s too expensive</row>
+          <row label="r6">Over-tourism (there are too many tourists there)</row>
+          <row label="r7">It&#8217;s too far away/too hard to get to</row>
+          <row label="r8">Other destinations are more attractive</row>
+          <row label="r9">I don't like the weather there</row>
+          <row label="r10">The destination is just not on my radar</row>
+          <row label="r11">I don&#8217;t like its politics</row>
+          <row label="r12" exclusive="1" randomize="0">NONE OF THESE</row>
+        </checkbox>
+      </block>
+    </block>
+    <looprow label="Lr1" cond="(condition.marker__Alabama)">
+      <loopvar name="ApolloState">Alabama</loopvar>
+    </looprow>
+    <looprow label="Lr2" cond="(condition.marker__Alaska)">
+      <loopvar name="ApolloState">Alaska</loopvar>
+    </looprow>
+    <looprow label="Lr3" cond="(condition.marker__Arizona)">
+      <loopvar name="ApolloState">Arizona</loopvar>
+    </looprow>
+    <looprow label="Lr4" cond="(condition.marker__Arkansas)">
+      <loopvar name="ApolloState">Arkansas</loopvar>
+    </looprow>
+    <looprow label="Lr5" cond="(condition.marker__California)">
+      <loopvar name="ApolloState">California</loopvar>
+    </looprow>
+    <looprow label="Lr6" cond="(condition.marker__Colorado)">
+      <loopvar name="ApolloState">Colorado</loopvar>
+    </looprow>
+    <looprow label="Lr7" cond="(condition.marker__Connecticut)">
+      <loopvar name="ApolloState">Connecticut</loopvar>
+    </looprow>
+    <looprow label="Lr8" cond="(condition.marker__Delaware)">
+      <loopvar name="ApolloState">Delaware</loopvar>
+    </looprow>
+    <looprow label="Lr9" cond="(condition.marker__Florida)">
+      <loopvar name="ApolloState">Florida</loopvar>
+    </looprow>
+    <looprow label="Lr10" cond="(condition.marker__Georgia)">
+      <loopvar name="ApolloState">Georgia</loopvar>
+    </looprow>
+    <looprow label="Lr11" cond="(condition.marker__Hawaii)">
+      <loopvar name="ApolloState">Hawaii</loopvar>
+    </looprow>
+    <looprow label="Lr12" cond="(condition.marker__Idaho)">
+      <loopvar name="ApolloState">Idaho</loopvar>
+    </looprow>
+    <looprow label="Lr13" cond="(condition.marker__Illinois)">
+      <loopvar name="ApolloState">Illinois</loopvar>
+    </looprow>
+    <looprow label="Lr14" cond="(condition.marker__Indiana)">
+      <loopvar name="ApolloState">Indiana</loopvar>
+    </looprow>
+    <looprow label="Lr15" cond="(condition.marker__Iowa)">
+      <loopvar name="ApolloState">Iowa</loopvar>
+    </looprow>
+    <looprow label="Lr16" cond="(condition.marker__Kansas)">
+      <loopvar name="ApolloState">Kansas</loopvar>
+    </looprow>
+    <looprow label="Lr17" cond="(condition.marker__Kentucky)">
+      <loopvar name="ApolloState">Kentucky</loopvar>
+    </looprow>
+    <looprow label="Lr18" cond="(condition.marker__Louisiana)">
+      <loopvar name="ApolloState">Louisiana</loopvar>
+    </looprow>
+    <looprow label="Lr19" cond="(condition.marker__Maine)">
+      <loopvar name="ApolloState">Maine</loopvar>
+    </looprow>
+    <looprow label="Lr20" cond="(condition.marker__Maryland)">
+      <loopvar name="ApolloState">Maryland</loopvar>
+    </looprow>
+    <looprow label="Lr21" cond="(condition.marker__Massachusetts)">
+      <loopvar name="ApolloState">Massachusetts</loopvar>
+    </looprow>
+    <looprow label="Lr22" cond="(condition.marker__Michigan)">
+      <loopvar name="ApolloState">Michigan</loopvar>
+    </looprow>
+    <looprow label="Lr23" cond="(condition.marker__Minnesota)">
+      <loopvar name="ApolloState">Minnesota</loopvar>
+    </looprow>
+    <looprow label="Lr24" cond="(condition.marker__Mississippi)">
+      <loopvar name="ApolloState">Mississippi</loopvar>
+    </looprow>
+    <looprow label="Lr25" cond="(condition.marker__Missouri)">
+      <loopvar name="ApolloState">Missouri</loopvar>
+    </looprow>
+    <looprow label="Lr26" cond="(condition.marker__Montana)">
+      <loopvar name="ApolloState">Montana</loopvar>
+    </looprow>
+    <looprow label="Lr27" cond="(condition.marker__Nebraska)">
+      <loopvar name="ApolloState">Nebraska</loopvar>
+    </looprow>
+    <looprow label="Lr28" cond="(condition.marker__Nevada)">
+      <loopvar name="ApolloState">Nevada</loopvar>
+    </looprow>
+    <looprow label="Lr29" cond="(condition.marker__New_Hampshire)">
+      <loopvar name="ApolloState">New Hampshire</loopvar>
+    </looprow>
+    <looprow label="Lr30" cond="(condition.marker__New_Jersey)">
+      <loopvar name="ApolloState">New Jersey</loopvar>
+    </looprow>
+    <looprow label="Lr31" cond="(condition.marker__New_Mexico)">
+      <loopvar name="ApolloState">New Mexico</loopvar>
+    </looprow>
+    <looprow label="Lr32" cond="(condition.marker__New_York)">
+      <loopvar name="ApolloState">New York</loopvar>
+    </looprow>
+    <looprow label="Lr33" cond="(condition.marker__North_Carolina)">
+      <loopvar name="ApolloState">North Carolina</loopvar>
+    </looprow>
+    <looprow label="Lr34" cond="(condition.marker__North_Dakota)">
+      <loopvar name="ApolloState">North Dakota</loopvar>
+    </looprow>
+    <looprow label="Lr35" cond="(condition.marker__Ohio)">
+      <loopvar name="ApolloState">Ohio</loopvar>
+    </looprow>
+    <looprow label="Lr36" cond="(condition.marker__Oklahoma)">
+      <loopvar name="ApolloState">Oklahoma</loopvar>
+    </looprow>
+    <looprow label="Lr37" cond="(condition.marker__Oregon)">
+      <loopvar name="ApolloState">Oregon</loopvar>
+    </looprow>
+    <looprow label="Lr38" cond="(condition.marker__Pennsylvania)">
+      <loopvar name="ApolloState">Pennsylvania</loopvar>
+    </looprow>
+    <looprow label="Lr39" cond="(condition.marker__Rhode_Island)">
+      <loopvar name="ApolloState">Rhode Island</loopvar>
+    </looprow>
+    <looprow label="Lr40" cond="(condition.marker__South_Carolina)">
+      <loopvar name="ApolloState">South Carolina</loopvar>
+    </looprow>
+    <looprow label="Lr41" cond="(condition.marker__South_Dakota)">
+      <loopvar name="ApolloState">South Dakota</loopvar>
+    </looprow>
+    <looprow label="Lr42" cond="(condition.marker__Tennessee)">
+      <loopvar name="ApolloState">Tennessee</loopvar>
+    </looprow>
+    <looprow label="Lr43" cond="(condition.marker__Texas)">
+      <loopvar name="ApolloState">Texas</loopvar>
+    </looprow>
+    <looprow label="Lr44" cond="(condition.marker__Utah)">
+      <loopvar name="ApolloState">Utah</loopvar>
+    </looprow>
+    <looprow label="Lr45" cond="(condition.marker__Vermont)">
+      <loopvar name="ApolloState">Vermont</loopvar>
+    </looprow>
+    <looprow label="Lr46" cond="(condition.marker__Virginia)">
+      <loopvar name="ApolloState">Virginia</loopvar>
+    </looprow>
+    <looprow label="Lr47" cond="(condition.marker__West_Virginia)">
+      <loopvar name="ApolloState">West Virginia</loopvar>
+    </looprow>
+    <looprow label="Lr48" cond="(condition.marker__Washington)">
+      <loopvar name="ApolloState">Washington</loopvar>
+    </looprow>
+    <looprow label="Lr49" cond="(condition.marker__Wisconsin)">
+      <loopvar name="ApolloState">Wisconsin</loopvar>
+    </looprow>
+    <looprow label="Lr50" cond="(condition.marker__Wyoming)">
+      <loopvar name="ApolloState">Wyoming</loopvar>
+    </looprow>
+  </loop>
+  <suspend/>
+  <block builder:title="Blocks A B Randomization" label="b9" randomizeChildren="1" count="1">
+    <block builder:title="Block A" label="b10" randomize="1">
+      <radio optional="0" label="Q422">
+        <row label="r1">Yes</row>
+        <row label="r2">No</row>
+        <row label="r3">I don't know</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;Do you plan to travel for the St. Valentine's Day holiday this year?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q423">
+        <row label="r2">Very important</row>
+        <row label="r3">Important</row>
+        <row label="r4">Neutral (Neither important nor unimportant)</row>
+        <row label="r5">Unimportant</row>
+        <row label="r6">Very unimportant</row>
+        <comment>Select one to express how you typically feel</comment>
+        <title>&lt;strong&gt;While traveling for leisure, how important is it to build connection with &lt;u&gt;any friends or family that are traveling with you&lt;/u&gt;?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q424">
+        <row label="r2">Very important</row>
+        <row label="r3">Important</row>
+        <row label="r4">Neutral (Neither important nor unimportant)</row>
+        <row label="r5">Unimportant</row>
+        <row label="r6">Very unimportant</row>
+        <comment>Select one to express how you typically feel</comment>
+        <title>&lt;strong&gt;While traveling for leisure, how important is it to meet and connect with &lt;u&gt;local residents of your destination&lt;/u&gt;?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q425">
+        <row label="r2">Very important</row>
+        <row label="r3">Important</row>
+        <row label="r4">Neutral (Neither important nor unimportant)</row>
+        <row label="r5">Unimportant</row>
+        <row label="r6">Very unimportant</row>
+        <comment>Select one to express how you typically feel</comment>
+        <title>&lt;strong&gt;While traveling for leisure, how important is it for you to stay connected with your &lt;u&gt;friends or family back home&lt;/u&gt;?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q426">
+        <row label="r11">Very high degree of influence</row>
+        <row label="r7">High degree of Influence</row>
+        <row label="r8">Moderate degree of Influence</row>
+        <row label="r9">Low degree of influence</row>
+        <row label="r5">No influence at all</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;How much influence do friends, family, or social circles have on your &lt;u&gt;choice of travel destinations&lt;/u&gt;?&lt;/strong&gt;</title>
+      </radio>
+      <radio label="Q427" optional="0">
+        <row label="r1">Very likely</row>
+        <row label="r2">Likely</row>
+        <row label="r3">Neutral (Neither likely nor unlikely)</row>
+        <row label="r4">Unlikely</row>
+        <row label="r5">Very unlikely</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;How likely are you to use social media or apps to connect &lt;u&gt;with other travelers or locals&lt;/u&gt; before, during, or after your trip?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q428">
+        <row label="r1">10 (Extremely important)</row>
+        <row label="r2">9</row>
+        <row label="r8">8</row>
+        <row label="r3">7</row>
+        <row label="r9">6</row>
+        <row label="r4">5</row>
+        <row label="r10">4</row>
+        <row label="r5">3</row>
+        <row label="r6">2</row>
+        <row label="r7">1 (Not important at all)</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;On a scale from 1 to 10, how important is &lt;u&gt;the social aspect of travel&lt;/u&gt; in contributing to your overall satisfaction with the trip?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q433">
+        <row label="r1">Significantly improved</row>
+        <row label="r2">Somewhat improved</row>
+        <row label="r3">Had no impact on</row>
+        <row label="r4">Somewhat worsened</row>
+        <row label="r5">Significantly worsened</row>
+        <comment/>
+        <title>&lt;p&gt;&lt;strong&gt;How have your leisure travel experiences impacted the quality of your personal relationships? (Select one to complete the sentence)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;Overall, leisure travel has ___________ the quality of my personal relationships.&lt;/strong&gt;&lt;/p&gt;</title>
+      </radio>
+    </block>
+    <suspend/>
+    <block builder:title="Block B" label="b11" randomize="1">
+      <radio optional="0" label="Q429">
+        <row label="r1">Very important</row>
+        <row label="r2">Important</row>
+        <row label="r3">Neutral (neither important nor unimportant)</row>
+        <row label="r4">Unimportant</row>
+        <row label="r5">Very unimportant</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;In general, how important to you is romance in your travel experiences?&lt;/strong&gt;</title>
+      </radio>
+      <radio optional="0" label="Q430">
+        <row label="r1">Yes, certain places have a distinct romantic vibe</row>
+        <row label="r2">No, it depends more on the activities and experiences</row>
+        <row label="r3">I&#8217;m not sure</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;Do you believe that certain destinations are naturally more romantic than others?&lt;/strong&gt;</title>
+      </radio>
+      <checkbox label="Q431" atleast="1" optional="0" shuffle="rows" atmost="3">
+        <row label="r1">Scenic beauty</row>
+        <row label="r2">Privacy - Peaceful atmosphere</row>
+        <row label="r3">Luxury accommodations (e.g., boutique hotels, resorts)</row>
+        <row label="r4">Cultural charm (e.g., art, history, architecture)</row>
+        <row label="r5">Romantic activities (e.g., sunset cruises, intimate dining)</row>
+        <row label="r6">Mild and pleasant climate</row>
+        <row label="r7">Exclusivity</row>
+        <row label="r8">Off-the-beaten-path location</row>
+        <row label="r9">Affordability</row>
+        <row label="r10" randomize="0" exclusive="1">NONE OF THESE</row>
+        <comment>Select as many as three</comment>
+        <title>&lt;strong&gt;Which of these factors &lt;u&gt;contribute the most&lt;/u&gt; to a destination feeling romantic?&amp;nbsp;&lt;/strong&gt;</title>
+      </checkbox>
+      <radio optional="0" label="Q432">
+        <row label="r1">10 = Completely satisfied</row>
+        <row label="r2">9</row>
+        <row label="r3">8</row>
+        <row label="r4">7</row>
+        <row label="r5">6</row>
+        <row label="r6">5</row>
+        <row label="r7">4</row>
+        <row label="r8">3</row>
+        <row label="r9">2</row>
+        <row label="r10">1 = Deeply unsatisfied</row>
+        <comment>Please rate your satisfaction on a scale from 1 to 10, where 10 represents "completely satisfied" and 1 represents "deeply unsatisfied."</comment>
+        <title>&lt;strong&gt;How satisfied are you with the quality of your personal relationships?&amp;nbsp;&lt;/strong&gt;</title>
+      </radio>
+      <checkbox atleast="1" label="Q310">
+        <title>&lt;strong&gt;Please tell us if you have done/experienced any of these in the PAST TWELVE (12) MONTHS while traveling.&lt;/strong&gt;</title>
+        <comment>Select all that apply</comment>
+        <row randomize="0" label="r1">Went on vacation hoping to meet a new romantic partner</row>
+        <row randomize="0" label="r2">Met a new romantic partner while traveling</row>
+        <row label="r3">Took a trip specifically to get away from a spouse or partner</row>
+        <row label="r4">Done something you regretted later</row>
+        <row label="r11">Used an &lt;u&gt;&lt;strong&gt;online dating app&lt;/strong&gt;&lt;/u&gt; to meet a local resident</row>
+        <row label="r10">Traveled to meet (for the first time) someone I met on an &lt;strong&gt;online dating app&lt;/strong&gt;</row>
+        <row label="r5">Done something risky or dangerous</row>
+        <row exclusive="1" label="r9" randomize="0">NONE OF THESE</row>
+      </checkbox>
+      <suspend/>
+      <radio optional="0" label="Q417">
+        <row label="r1">Entirely closed to visitors</row>
+        <row label="r2">Partially open to visitors</row>
+        <row label="r3">Fully open and operational</row>
+        <row label="r4">Unsure / I don&#8217;t know</row>
+        <comment>(Select one that best completes the sentence)&amp;nbsp;</comment>
+        <title>&lt;p&gt;&lt;strong&gt;Moving to a serious topic for a moment:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Which best describes your perception of Los Angeles in the wake of recent wildfires?&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Right now, Los Angeles is ____________.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;</title>
+      </radio>
+      <radio optional="0" label="Q418">
+        <row label="r1">Very seriously damaged</row>
+        <row label="r2">Damaged</row>
+        <row label="r3">Slightly damaged</row>
+        <row label="r4">Not at all damaged</row>
+        <row label="r5">Unsure / I don&#8217;t know</row>
+        <comment>(Select one that best completes the sentence)</comment>
+        <title>&lt;p&gt;&lt;strong&gt;Which best describes your feelings about what visitors to Los Angeles will experience in the wake of recent wildfires?&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Right now, the visitor experience in Los Angeles is ____________ by the wildfires.&lt;/strong&gt;&lt;/p&gt;</title>
+      </radio>
+      <radio optional="0" label="Q419">
+        <row label="r1">Very appealing</row>
+        <row label="r2">Appealing</row>
+        <row label="r3">Neutral (neither appealing nor unappealing)</row>
+        <row label="r4">Unappealing</row>
+        <row label="r5">Very unappealing</row>
+        <comment>Select one</comment>
+        <title>&lt;strong&gt;Given your understanding of its current condition, how appealing do you find the idea of visiting Los Angeles for leisure in the NEXT THREE (3) MONTHS?&lt;/strong&gt;</title>
+      </radio>
+    </block>
+  </block>
+  <suspend/>
+  <html where="survey" label="cm11">&lt;strong&gt;Please note all questions are entirely confidential and will only be used to develop group profiles.&lt;/strong&gt;</html>
+  <radio label="Q154">
+    <title>&lt;strong&gt;Which best describes your ethnicity?&lt;/strong&gt;</title>
+    <row label="r1">White</row>
+    <row label="r2">Black/African-American</row>
+    <row label="r3">Asian</row>
+    <row label="r4">Hispanic/Latino</row>
+    <row label="r5">Native Hawaiian/Pacific Islander</row>
+    <row label="r6">American Indian/Native Alaskan</row>
+    <row label="r7">Two or more races</row>
+    <row label="r8">I prefer not to answer</row>
+  </radio>
+  <radio label="Q155">
+    <title>&lt;strong&gt;What is your highest level of formal education? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Some high school or less</row>
+    <row label="r2">High school graduate</row>
+    <row label="r3">Some college</row>
+    <row label="r4">College graduate</row>
+    <row label="r5">Some graduate school</row>
+    <row label="r6">Completed graduate degree</row>
+    <row label="r7">I prefer not to answer</row>
+  </radio>
+  <radio label="Q156">
+    <title>&lt;strong&gt;Which of the following best describes your current marital status? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Single</row>
+    <row label="r2">Single with children under 18</row>
+    <row label="r3">Married</row>
+    <row label="r4">Married with children under 18</row>
+    <row label="r5">Domestic partnership</row>
+    <row label="r6">Domestic partnership with children under 18</row>
+    <row label="r7">Other</row>
+    <row label="r8">I prefer not to answer</row>
+  </radio>
+  <suspend/>
+  <select label="Q157" cond="(Q156.r2 or Q156.r4 or Q156.r6)" rowLegend="left">
+    <title>&lt;strong&gt;How many children do you have in each of the following age groups?&lt;/strong&gt;</title>
+    <choice label="ch1">0</choice>
+    <choice label="ch2">1</choice>
+    <choice label="ch3">2</choice>
+    <choice label="ch4">3</choice>
+    <choice label="ch5">4</choice>
+    <choice label="ch6">5</choice>
+    <choice label="ch7">6</choice>
+    <choice label="ch8">7</choice>
+    <choice label="ch9">8</choice>
+    <choice label="ch10">9</choice>
+    <choice label="ch11">10 or more</choice>
+    <row label="r1">Younger than 6</row>
+    <row label="r2">6-9</row>
+    <row label="r3">10-13</row>
+    <row label="r4">14-17</row>
+  </select>
+  <suspend/>
+  <radio label="Q158">
+    <title>&lt;strong&gt;Do you consider yourself? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Heterosexual or straight</row>
+    <row label="r2">LGBTQIA+</row>
+    <row label="r3">Other</row>
+    <row label="r4">I prefer not to answer</row>
+  </radio>
+  <radio label="Q159">
+    <title>&lt;strong&gt;Which best describes your political affiliation? (Select one)&lt;/strong&gt;</title>
+    <row label="r1">Republican</row>
+    <row label="r2">Democratic</row>
+    <row label="r3">Libertarian</row>
+    <row label="r4">Green&amp;nbsp;</row>
+    <row label="r5">Other</row>
+    <row label="r6">Unaffiliated with a political party</row>
+    <row label="r7">I prefer not to answer</row>
+  </radio>
+  <radio optional="0" label="Q435">
+    <row label="r1">&lt;strong&gt;Very important &#8211;&lt;/strong&gt; I prefer destinations that are unique and different.</row>
+    <row label="r2">&lt;strong&gt;Somewhat important &#8211;&lt;/strong&gt; I consider uniqueness, but other factors matter more.</row>
+    <row label="r3">&lt;strong&gt;Neutral &#8211;&lt;/strong&gt; I don't prioritize uniqueness.</row>
+    <row label="r4">&lt;strong&gt;Not very important &#8211;&lt;/strong&gt; I focus primarily on other factors.</row>
+    <row label="r5">&lt;strong&gt;Not important at all &#8211;&lt;/strong&gt; Uniqueness doesn't influence me at all.</row>
+    <comment>Select one to express how you typically feel</comment>
+    <title>&lt;strong&gt;When choosing where to travel, how important is the &lt;u&gt;uniqueness&lt;/u&gt; of a destination (compared to other destinations)?&lt;/strong&gt;</title>
+  </radio>
+  <suspend/>
+  <checkbox label="Q436" atleast="1" optional="0" shuffle="rows" cond="condition.UNIQUE">
+    <row label="r1">Natural landscapes and scenery</row>
+    <row label="r2">Local culture and traditions</row>
+    <row label="r3">New (or changing) things to see and do</row>
+    <row label="r4">Historical landmarks or attractions</row>
+    <row label="r5">Instagram-worthy experiences</row>
+    <row label="r6">Restaurants and culinary experiences</row>
+    <row label="r7">Outdoor activities</row>
+    <row label="r8">Unique accommodations</row>
+    <row label="r9">Events or festivals</row>
+    <row label="r10">Safety and cleanliness</row>
+    <row label="r11">Accessibility and transportation options</row>
+    <row label="r12">Cost or value for money</row>
+    <row label="r13" randomize="0" exclusive="1">NONE OF THESE</row>
+    <comment>&lt;strong&gt;Select all you typically consider to be important&lt;/strong&gt;</comment>
+    <title>&lt;strong&gt;What factors (if any) are important to you when deciding if a travel destination is unique or different from other destinations?&amp;nbsp;&lt;/strong&gt;</title>
+  </checkbox>
+  <radio optional="0" label="Q437" randomize="0">
+    <title>&lt;p&gt;&lt;strong&gt;How much do you agree with the following statement?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;b&gt;It is becoming &lt;u&gt;increasingly difficult&lt;/u&gt; to find travel destinations that are truly unique.&lt;/b&gt;&lt;/p&gt;</title>
+    <comment>Select one</comment>
+    <row label="r1">Strongly agree</row>
+    <row label="r2">Agree</row>
+    <row label="r3">Neutral</row>
+    <row label="r4">Disagree</row>
+    <row label="r5">Strongly disagree</row>
+  </radio>
+  <checkbox label="Q404" colLegendRows="6,12,18" builderHint="{&quot;rocochoName&quot;:&quot;checkboxgrid&quot;}" comment="" atleast="0" shuffle="rows">
+    <title>&lt;p&gt;&lt;strong&gt;Finally, let's talk about &lt;u&gt;MOUNTAIN RESORTS AND DESTINATIONS&lt;/u&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;In the PAST TWELVE (12) MONTHS, which of these have you visited in the WINTER/COLD SEASON (November to May)? Which have you visited in the WARM SEASON (June to September?&lt;/strong&gt;&lt;/p&gt;</title>
+    <row label="r40">Lake Tahoe, California/Nevada</row>
+    <row label="r49">Mammoth, California</row>
+    <row label="r60">&lt;span style="color: #1d1c1d;"&gt;Big Bear Lake, CA&lt;/span&gt;</row>
+    <row label="r42">Whistler Blackcomb, British Columbia</row>
+    <row label="r45">Banff and Lake Louise, Alberta</row>
+    <row label="r48">Stowe, Vermont</row>
+    <row label="r46">Park City, Utah</row>
+    <row label="r41" randomize="0">Aspen, Colorado</row>
+    <row label="r44" randomize="0">Vail, Colorado</row>
+    <row label="r47" randomize="0">Telluride, Colorado</row>
+    <row label="r51" randomize="0">Crested Butte, Colorado</row>
+    <row label="r52" randomize="0">Keystone, Colorado</row>
+    <row label="r55" randomize="0">Breckenridge, Colorado</row>
+    <row label="r62" randomize="0">Steamboat Springs, Colorado</row>
+    <row label="r63" randomize="0">Estes Park, Colorado</row>
+    <row label="r64" randomize="0">Telluride, Colorado</row>
+    <row label="r50">Mont-Tremblant, Quebec</row>
+    <row label="r43">Jackson Hole, Wyoming</row>
+    <row label="r53">Sun Valley, Idaho</row>
+    <row label="r54">Big Sky, Montana</row>
+    <row label="r56">Taos, New Mexico</row>
+    <row label="r57">Lake Placid, New York</row>
+    <row label="r58">Crystal Mountain, Washington</row>
+    <row label="r59">Mount Bachelor, Oregon</row>
+    <row label="r61">&lt;span class="_3P4ktl zeCuXk _28z5Fp _3-to_p" style="font-weight: 500 !important;"&gt;Killington, Vermont&lt;/span&gt;</row>
+    <col label="c1">&lt;strong&gt;WINTER TRAVEL - I have visited during the COLD SEASON in the past twelve months&lt;/strong&gt;</col>
+    <col label="c2">&lt;strong&gt;WARM SEASON TRAVEL - I have visited during the WARM SEASON in the past twelve months&lt;/strong&gt;</col>
+  </checkbox>
+  <radio optional="0" label="Q409">
+    <row label="r1">Yes</row>
+    <row label="r2">No</row>
+    <comment>Select one</comment>
+    <title>&lt;strong&gt;Are you an Artificial Intelligence tool or bot taking this survey?&lt;/strong&gt;</title>
+  </radio>
+  <suspend/>
+</survey>

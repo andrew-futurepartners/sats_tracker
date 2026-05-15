@@ -111,9 +111,6 @@ def load_questions(conn: sqlite3.Connection) -> List[Dict[str, Any]]:
             first_seen,
             last_seen,
             currently_active,
-            insights_explorer,
-            insights_section,
-            insights_page,
             notes
         FROM survey_questions
     """)
@@ -153,15 +150,6 @@ def build_description(row: Dict[str, Any]) -> str:
         f"{n.get('wave', 'unknown')}: {n.get('description', '')}" for n in notes
     )
 
-    insights_flags = []
-    if row["insights_explorer"]:
-        insights_flags.append("yes")
-    else:
-        insights_flags.append("no")
-
-    insights_section = row["insights_section"] or ""
-    insights_page = row["insights_page"] or ""
-
     return (
         f"Label: {label}\n"
         f"Type: {qtype}\n"
@@ -172,9 +160,7 @@ def build_description(row: Dict[str, Any]) -> str:
         f"First seen: {first_seen}\n"
         f"Last seen: {last_seen}\n"
         f"Currently active: {active}\n"
-        f"Change history: {notes_str}\n"
-        f"Insights Explorer: {insights_flags[0]}, "
-        f"Section: {insights_section}, Page: {insights_page}"
+        f"Change history: {notes_str}"
     )
 
 

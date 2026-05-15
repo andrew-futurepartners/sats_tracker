@@ -19,13 +19,23 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 from openai import OpenAI
+import pandas as pd  # NEW
+
 
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
-api_key = os.getenv("OPENAI_API_KEY")
+try:
+    api_key = st.secrets["OPENAI_API_KEY"]
+except (KeyError, FileNotFoundError):
+    api_key = os.getenv("OPENAI_API_KEY")
+
 if not api_key:
-    raise RuntimeError("OPENAI_API_KEY is not set.")
+    st.error(
+        "OPENAI_API_KEY is not set. "
+        "Add it to .streamlit/secrets.toml, the Streamlit Cloud dashboard, or a .env file."
+    )
+    st.stop()
 
 client = OpenAI(api_key=api_key)
 EMBEDDING_MODEL = "text-embedding-3-small"  # good default for semantic search
@@ -163,9 +173,6 @@ def call_llm(user_question: str, context_rows: List[Dict[str, Any]]) -> str:
                 "currently_active": active,
                 "months_asked": months_asked,
                 "response_options": options,
-                "insights_explorer": bool(row.get("insights_explorer", 0)),
-                "insights_section": row.get("insights_section") or "",
-                "insights_page": row.get("insights_page") or "",
                 "notes": notes,
             }
         )
@@ -199,8 +206,6 @@ def call_llm(user_question: str, context_rows: List[Dict[str, Any]]) -> str:
             f"  Currently active: {block['currently_active']}\n"
             f"  Months asked: {block['months_asked']}\n"
             f"  Options: {options_str}\n"
-            f"  Insights Explorer: {block['insights_explorer']}, "
-            f"Section: {block['insights_section']}, Page: {block['insights_page']}\n"
             f"{notes_section}"
         )
 
@@ -294,6 +299,123 @@ def load_question_rows(conn: sqlite3.Connection, labels: List[str]) -> List[Dict
     cur.execute(sql, labels)
     rows = cur.fetchall()
     return [dict(r) for r in rows]
+
+def load_all_questions(conn: sqlite3.Connection) -> List[Dict[str, Any]]:
+    """
+    Load all questions from survey_questions as a list of dicts.
+    """
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM survey_questions")
+    rows = cur.fetchall()
+    return [dict(r) for r in rows]
+
+
+def render_matrix_view(conn: sqlite3.Connection) -> None:
+    """
+    Render a streamlined matrix of questions vs months:
+
+    - Rows: questions
+    - Columns: Label, Question text, then one column per month (YYYY-MM)
+    - Cell: a disabled checkbox indicating whether the question is asked in that month
+    """
+    rows = load_all_questions(conn)
+    if not rows:
+        st.info("No questions in the database yet.")
+        return
+
+    # Collect all distinct months across all questions
+    all_months_set = set()
+    months_per_row: List[List[str]] = []
+    for r in rows:
+        try:
+            months = json.loads(r.get("months_asked") or "[]")
+        except Exception:
+            months = []
+        months_per_row.append(months)
+        for m in months:
+            all_months_set.add(m)
+
+    all_months = sorted(all_months_set)  # 'YYYY-MM' sorts chronologically
+
+    # Build main data table: booleans per month
+    data_records = []
+    for r, months in zip(rows, months_per_row):
+        rec = {
+            "Label": r["question_label"],
+            "Question text": r.get("question_text") or "",
+        }
+        for m in all_months:
+            rec[m] = m in months  # True/False for checkbox
+        data_records.append(rec)
+
+    df = pd.DataFrame(data_records)
+
+    # Configure columns for a sleek UI
+    column_config: Dict[str, Any] = {
+        "Label": st.column_config.TextColumn("Label", width="medium"),
+        "Question text": st.column_config.TextColumn("Question text", width="large"),
+    }
+    for m in all_months:
+        column_config[m] = st.column_config.CheckboxColumn(
+            m,
+            help=f"Asked in {m}",
+            disabled=True,
+        )
+
+    st.subheader("Questionnaire matrix")
+    st.caption("Each row is a question; checked months indicate when it was asked.")
+
+    st.dataframe(
+        df,
+        use_container_width=True,
+        hide_index=True,
+        column_config=column_config,
+    )
+
+    # Simple detail panel for attributes (instead of per-cell hover HTML)
+    st.markdown("### Question details")
+    labels = [r["question_label"] for r in rows]
+    selected_label = st.selectbox("Select a question to view details", labels)
+
+    selected = next((r for r in rows if r["question_label"] == selected_label), None)
+    if selected:
+        with st.expander(f"Details for {selected_label}", expanded=True):
+            st.markdown(f"**Label:** `{selected_label}`")
+            st.markdown(f"**Question text:** {selected.get('question_text') or ''}")
+            st.markdown(f"- Type: `{friendly_question_type(selected['question_type'])}`")
+            st.markdown(f"- Frequency: `{selected['frequency']}`")
+            st.markdown(f"- First seen: `{selected['first_seen']}`")
+            st.markdown(f"- Last seen: `{selected['last_seen']}`")
+            st.markdown(
+                f"- Currently active: "
+                f"`{'yes' if selected['currently_active'] else 'no'}`"
+            )
+            st.markdown(
+                f"- Change flag: "
+                f"`{'yes' if selected['change_flag'] else 'no'}`"
+            )
+            # Response options
+            try:
+                opts = json.loads(selected.get("response_options") or "[]")
+            except Exception:
+                opts = []
+            if opts:
+                st.markdown("**Response options:**")
+                for o in opts:
+                    st.markdown(f"- {o}")
+
+            # Change history / notes
+            notes_raw = selected.get("notes") or "[]"
+            try:
+                notes = json.loads(notes_raw)
+            except Exception:
+                notes = []
+            if notes:
+                st.markdown("**Change history / notes:**")
+                for note in notes:
+                    wave = note.get("wave", "unknown")
+                    desc = note.get("description", "")
+                    st.markdown(f"- `{wave}`: {desc}")
 
 def extract_wave_tokens_from_question(text: str) -> List[str]:
     """
@@ -475,9 +597,10 @@ def main():
 
     # Sidebar config
     st.sidebar.header("File")
+    default_db = str(Path(__file__).parent / "survey_questions.sqlite")
     db_path = st.sidebar.text_input(
         "DB path",
-        value="survey_questions.sqlite",
+        value=default_db,
         help="Path to your DB (created by survey_parser.py).",
     )
 
@@ -501,144 +624,139 @@ def main():
             "Run `build_embeddings.py --db survey_questions.sqlite` first."
         )
 
-    user_question = st.text_area(
-        "Your question",
-        placeholder="e.g., When did we first ask about travel insurance, and is it still active?",
-        height=100,
-    )
+    # -----------------------------
+    # Main layout: Q&A tab + Matrix tab
+    # -----------------------------
+    tab_qa, tab_matrix = st.tabs(["Q&A", "Full Question List"])
 
-    if st.button("Ask") and user_question.strip():
-        if not emb_map:
-            st.error("Cannot answer: embeddings are missing. Run build_embeddings.py first.")
-            return
+    with tab_qa:
+        # --- existing QA interface goes here ---
+        user_question = st.text_area(
+            "Your question",
+            key="qa_question_input",
+            placeholder="e.g., When did we first ask about travel insurance, and is it still active?",
+            height=100,
+        )
 
-        question_text = user_question.strip()
+        if st.button("Ask", key="ask_button") and user_question.strip():
+            if not emb_map:
+                st.error("Cannot answer: embeddings are missing. Run build_embeddings.py first.")
+                return
 
-        with st.spinner("Finding an answer..."):
-            # 1) Semantic retrieval over all embeddings (no explicit max_k)
-            emb_matches = retrieve_relevant_questions(
-                question_text,
-                emb_map,
-                max_k=None,           # no hard cap here
-                min_k=1,
-                base_threshold=0.50,
-                relative_margin=0.05,
-            )
-            emb_labels = [m[0] for m in emb_matches]
+            question_text = user_question.strip()
 
-            # 2) Keyword-based retrieval directly from SQLite
-            keyword_rows = keyword_filter_questions(
-                conn,
-                question_text,
-                max_results=None,     # no explicit cap here either
-            )
-            keyword_labels = [r["question_label"] for r in keyword_rows]
+            with st.spinner("Finding an answer..."):
+                # 1) Semantic retrieval over all embeddings (no explicit max_k)
+                emb_matches = retrieve_relevant_questions(
+                    question_text,
+                    emb_map,
+                    max_k=None,
+                    min_k=1,
+                    base_threshold=0.50,
+                    relative_margin=0.05,
+                )
+                emb_labels = [m[0] for m in emb_matches]
 
-            # 3) Combine labels, preserving order: embeddings first, then keyword-only
-            all_labels_ordered: List[str] = []
-            seen = set()
-            for lbl in emb_labels + keyword_labels:
-                if lbl in seen:
-                    continue
-                seen.add(lbl)
-                all_labels_ordered.append(lbl)
+                # 2) Keyword-based retrieval directly from SQLite
+                keyword_rows = keyword_filter_questions(
+                    conn,
+                    question_text,
+                    max_results=None,
+                )
+                keyword_labels = [r["question_label"] for r in keyword_rows]
 
-            # 4) Internal safety cap so we don't blow up the LLM context
-            if emb_map:
-                max_context = min(MAX_CONTEXT_QUESTIONS, len(emb_map))
-            else:
-                max_context = MAX_CONTEXT_QUESTIONS
+                # 3) Combine labels, preserving order: embeddings first, then keyword-only
+                all_labels_ordered: List[str] = []
+                seen = set()
+                for lbl in emb_labels + keyword_labels:
+                    if lbl in seen:
+                        continue
+                    seen.add(lbl)
+                    all_labels_ordered.append(lbl)
 
-            if len(all_labels_ordered) > max_context:
-                all_labels_ordered = all_labels_ordered[:max_context]
-
-            # 5) Load rows for combined labels and call LLM
-            rows = load_question_rows(conn, all_labels_ordered)
-            answer = call_llm(question_text, rows)
-
-        # --- Only keep questions actually referenced in the answer ---
-        used_label_bases = extract_labels_from_answer(answer)
-
-        if used_label_bases:
-            def is_used(row: Dict[str, Any]) -> bool:
-                lbl = row["question_label"] or ""
-                # Keep row if any base label (e.g. "Q550") appears in the full label
-                return any(base in lbl for base in used_label_bases)
-
-            rows = [r for r in rows if is_used(r)]
-        # If no labels were found in the answer, we leave rows as-is (fallback).
-
-        st.subheader("Answer")
-        st.markdown(answer)
-
-        st.subheader("Question Details")
-        if not rows:
-            st.write("No questions found.")
-        else:
-            for r in rows:
-                label = r["question_label"]
-                qtext = r["question_text"] or ""
-
-                # Short preview for the outer expander title
-                if qtext:
-                    preview = qtext.strip().replace("\n", " ")
-                    if len(preview) > 110:
-                        preview = preview[:110].rstrip() + "…"
-                    header = f"{label}: {preview}"
+                # 4) Internal safety cap
+                if emb_map:
+                    max_context = min(MAX_CONTEXT_QUESTIONS, len(emb_map))
                 else:
-                    header = label
+                    max_context = MAX_CONTEXT_QUESTIONS
 
-                # Single-level expander per question
-                with st.expander(header):
-                    # Label + full question text
-                    st.markdown(f"**Label:** `{label}`")
+                if len(all_labels_ordered) > max_context:
+                    all_labels_ordered = all_labels_ordered[:max_context]
+
+                # 5) Load rows for combined labels and call LLM
+                rows = load_question_rows(conn, all_labels_ordered)
+                answer = call_llm(question_text, rows)
+
+            # Filter questions down to those mentioned in the answer
+            used_label_bases = extract_labels_from_answer(answer)
+            if used_label_bases:
+                def is_used(row: Dict[str, Any]) -> bool:
+                    lbl = row["question_label"] or ""
+                    return any(base in lbl for base in used_label_bases)
+                rows = [r for r in rows if is_used(r)]
+
+            st.subheader("Answer")
+            st.markdown(answer)
+
+            st.subheader("Questions")
+            if not rows:
+                st.write("No questions found.")
+            else:
+                for r in rows:
+                    label = r["question_label"]
+                    qtext = r["question_text"] or ""
+
+                    # Short preview for the outer expander title
                     if qtext:
-                        st.markdown(f"**Question text:** {qtext}")
+                        preview = qtext.strip().replace("\n", " ")
+                        if len(preview) > 110:
+                            preview = preview[:110].rstrip() + "…"
+                        header = f"{label}: {preview}"
+                    else:
+                        header = label
 
-                    st.markdown("---")
-                    st.markdown("**Attributes & metadata**")
-                    st.markdown(f"- Type: `{friendly_question_type(r['question_type'])}`")
-                    st.markdown(f"- Frequency: `{r['frequency']}`")
-                    st.markdown(f"- First seen: `{r['first_seen']}`")
-                    st.markdown(f"- Last seen: `{r['last_seen']}`")
-                    st.markdown(
-                        f"- Currently active: "
-                        f"`{'yes' if r['currently_active'] else 'no'}`"
-                    )
-                    st.markdown(
-                        f"- Change flag: "
-                        f"`{'yes' if r['change_flag'] else 'no'}`"
-                    )
-                    st.markdown(
-                        f"- Insights Explorer: "
-                        f"`{'yes' if r['insights_explorer'] else 'no'}` "
-                        f"(Section: `{r['insights_section'] or ''}`, "
-                        f"Page: `{r['insights_page'] or ''}`)"
-                    )
+                    with st.expander(header):
+                        st.markdown(f"**Label:** `{label}`")
+                        if qtext:
+                            st.markdown(f"**Question text:** {qtext}")
 
-                    # Response options
-                    try:
-                        opts = json.loads(r["response_options"] or "[]")
-                    except Exception:
-                        opts = []
-                    if opts:
-                        st.markdown("**Response options:**")
-                        for o in opts:
-                            st.markdown(f"- {o}")
+                        st.markdown("---")
+                        st.markdown("**Attributes & metadata**")
+                        st.markdown(f"- Type: `{friendly_question_type(r['question_type'])}`")
+                        st.markdown(f"- Frequency: `{r['frequency']}`")
+                        st.markdown(f"- First seen: `{r['first_seen']}`")
+                        st.markdown(f"- Last seen: `{r['last_seen']}`")
+                        st.markdown(
+                            f"- Currently active: "
+                            f"`{'yes' if r['currently_active'] else 'no'}`"
+                        )
+                        st.markdown(
+                            f"- Change flag: "
+                            f"`{'yes' if r['change_flag'] else 'no'}`"
+                        )
+                        try:
+                            opts = json.loads(r["response_options"] or "[]")
+                        except Exception:
+                            opts = []
+                        if opts:
+                            st.markdown("**Response options:**")
+                            for o in opts:
+                                st.markdown(f"- {o}")
 
-                    # Change history / notes
-                    notes_raw = r.get("notes") or "[]"
-                    try:
-                        notes = json.loads(notes_raw)
-                    except Exception:
-                        notes = []
+                        notes_raw = r.get("notes") or "[]"
+                        try:
+                            notes = json.loads(notes_raw)
+                        except Exception:
+                            notes = []
+                        if notes:
+                            st.markdown("**Change history / notes:**")
+                            for note in notes:
+                                wave = note.get("wave", "unknown")
+                                desc = note.get("description", "")
+                                st.markdown(f"- `{wave}`: {desc}")
 
-                    if notes:
-                        st.markdown("**Change history / notes:**")
-                        for note in notes:
-                            wave = note.get("wave", "unknown")
-                            desc = note.get("description", "")
-                            st.markdown(f"- `{wave}`: {desc}")
+    with tab_matrix:
+        render_matrix_view(conn)
 
 
 if __name__ == "__main__":

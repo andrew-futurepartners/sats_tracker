@@ -1,0 +1,5 @@
+.env
+.streamlit/secrets.toml
+survey_questions.sqlite
+__pycache__/
+.idea/

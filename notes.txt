@@ -1,0 +1,9 @@
+Run Parser & Embeddings:
+python survey_parser.py QRE --db survey_questions.sqlite
+
+Run Streamlit:
+streamlit run qa_streamlit_app.py
+
+
+
+

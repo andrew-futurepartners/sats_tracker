@@ -163,9 +163,6 @@ CREATE TABLE IF NOT EXISTS survey_questions (
     currently_active INTEGER DEFAULT 1,  -- 1=true, 0=false
     change_flag INTEGER DEFAULT 0,       -- 1 if question disappeared but frequency='Always'
     question_hash TEXT,
-    insights_explorer INTEGER DEFAULT 0, -- user-editable
-    insights_section TEXT,               -- user-editable
-    insights_page TEXT,                  -- user-editable
     notes TEXT                           -- JSON-encoded list of {wave, description}
 );
 """
@@ -465,11 +462,8 @@ def upsert_questions(
                     currently_active,
                     change_flag,
                     question_hash,
-                    insights_explorer,
-                    insights_section,
-                    insights_page,
                     notes
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     label,
@@ -483,9 +477,6 @@ def upsert_questions(
                     1,                       # currently_active
                     0,                       # change_flag
                     q_hash,
-                    0,                       # insights_explorer (false)
-                    None,                    # insights_section
-                    None,                    # insights_page
                     notes_json,
                 ),
             )
@@ -661,6 +652,8 @@ def process_directory(dir_path: str, db_path: str) -> Dict[str, int]:
     Process all XML / TXT files in a directory (e.g., 'QRE').
 
     - For each file, parse the wave from its filename.
+    - Sort waves chronologically (YYYY-MM) so questionnaire changes are
+      applied in time order.
     - For each wave, skip processing if it is already recorded in processed_waves.
     - Otherwise, process the file just like process_file.
 
@@ -674,13 +667,13 @@ def process_directory(dir_path: str, db_path: str) -> Dict[str, int]:
 
     totals = {"inserted": 0, "updated": 0, "marked_inactive": 0}
 
-    # Sort files for deterministic behavior (by filename)
     entries = sorted(os.listdir(dir_path))
-
     if not entries:
         print("Directory is empty; nothing to do.")
         return totals
 
+    # Collect (wave, full_path) pairs
+    files_with_waves: List[tuple[str, str]] = []
     for name in entries:
         full_path = os.path.join(dir_path, name)
         if not os.path.isfile(full_path):
@@ -690,11 +683,26 @@ def process_directory(dir_path: str, db_path: str) -> Dict[str, int]:
         if not (name.lower().endswith(".xml") or name.lower().endswith(".txt")):
             continue
 
-        # We reuse process_file, which already has the wave skip logic.
+        try:
+            wave = parse_month_from_filename(full_path)
+        except ValueError as e:
+            print(f"Skipping {full_path}: {e}")
+            continue
+
+        files_with_waves.append((wave, full_path))
+
+    if not files_with_waves:
+        print("No valid wave files found; nothing to do.")
+        return totals
+
+    # Sort by wave (YYYY-MM) so we always process in chronological order
+    files_with_waves.sort(key=lambda x: x[0])
+
+    for wave, full_path in files_with_waves:
         try:
             file_stats = process_file(full_path, db_path)
         except SystemExit as e:
-            # If a single file fails to parse its month, just warn and move on
+            # If a single file fails to parse or is already processed, just warn and move on
             print(f"Skipping {full_path}: {e}")
             continue
 
